@@ -1,0 +1,3821 @@
+
+/tmp/arduino_build_85897/read.ino.elf:     file format elf32-avr
+
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+__vectors():
+   0:	40 c0       	rjmp	.+128    	; 0x82 <__ctors_end>
+   2:	64 c0       	rjmp	.+200    	; 0xcc <__bad_interrupt>
+   4:	63 c0       	rjmp	.+198    	; 0xcc <__bad_interrupt>
+   6:	62 c0       	rjmp	.+196    	; 0xcc <__bad_interrupt>
+   8:	61 c0       	rjmp	.+194    	; 0xcc <__bad_interrupt>
+   a:	60 c0       	rjmp	.+192    	; 0xcc <__bad_interrupt>
+   c:	5f c0       	rjmp	.+190    	; 0xcc <__bad_interrupt>
+   e:	5e c0       	rjmp	.+188    	; 0xcc <__bad_interrupt>
+  10:	5d c0       	rjmp	.+186    	; 0xcc <__bad_interrupt>
+  12:	94 c2       	rjmp	.+1320   	; 0x53c <__vector_9>
+  14:	5b c0       	rjmp	.+182    	; 0xcc <__bad_interrupt>
+  16:	d9 c2       	rjmp	.+1458   	; 0x5ca <__vector_11>
+  18:	05 c3       	rjmp	.+1546   	; 0x624 <__vector_12>
+  1a:	58 c0       	rjmp	.+176    	; 0xcc <__bad_interrupt>
+  1c:	57 c0       	rjmp	.+174    	; 0xcc <__bad_interrupt>
+  1e:	56 c0       	rjmp	.+172    	; 0xcc <__bad_interrupt>
+  20:	55 c0       	rjmp	.+170    	; 0xcc <__bad_interrupt>
+  22:	54 c0       	rjmp	.+168    	; 0xcc <__bad_interrupt>
+  24:	53 c0       	rjmp	.+166    	; 0xcc <__bad_interrupt>
+
+00000026 <digital_pin_to_timer_PGM>:
+	...
+__progmem_start():
+  2e:	00 04 05 07 00 00 00 00 00 00 00 00 00 00 00        ...............
+
+0000003d <port_to_output_PGM>:
+  3d:	00 00 00 00 38 00 35 00 32 00                       ....8.5.2.
+
+00000047 <port_to_mode_PGM>:
+  47:	00 00 00 00 37 00 34 00 31 00                       ....7.4.1.
+
+00000051 <digital_pin_to_port_PGM>:
+  51:	04 04 04 04 04 04 04 04 02 02 02 02 02 02 03 03     ................
+  61:	03 03 03 03 02 02 03                                .......
+
+00000068 <digital_pin_to_bit_mask_PGM>:
+  68:	01 02 04 08 10 20 40 80 01 02 04 08 10 20 01 02     ..... @...... ..
+  78:	04 08 10 20 40 80 40                                ... @.@
+
+0000007f <__progmem_end>:
+	...
+
+00000080 <__ctors_start>:
+__trampolines_start():
+  80:	91 05       	cpc	r25, r1
+
+00000082 <__ctors_end>:
+__dtors_end():
+  82:	11 24       	eor	r1, r1
+  84:	1f be       	out	0x3f, r1	; 63
+  86:	cf e5       	ldi	r28, 0x5F	; 95
+  88:	d4 e0       	ldi	r29, 0x04	; 4
+  8a:	de bf       	out	0x3e, r29	; 62
+  8c:	cd bf       	out	0x3d, r28	; 61
+
+0000008e <__do_copy_data>:
+.Loc.0():
+  8e:	10 e0       	ldi	r17, 0x00	; 0
+
+00000090 <.Loc.1>:
+.Loc.1():
+  90:	a0 e6       	ldi	r26, 0x60	; 96
+
+00000092 <.Loc.2>:
+.Loc.2():
+  92:	b0 e0       	ldi	r27, 0x00	; 0
+
+00000094 <.Loc.3>:
+.Loc.3():
+  94:	ee e5       	ldi	r30, 0x5E	; 94
+
+00000096 <.Loc.4>:
+.Loc.4():
+  96:	fc e0       	ldi	r31, 0x0C	; 12
+
+00000098 <.Loc.5>:
+.Loc.5():
+  98:	02 c0       	rjmp	.+4      	; 0x9e <.L__do_copy_data_start>
+
+0000009a <.L__do_copy_data_loop>:
+.Loc.6():
+  9a:	05 90       	lpm	r0, Z+
+
+0000009c <.Loc.7>:
+.Loc.7():
+  9c:	0d 92       	st	X+, r0
+
+0000009e <.L__do_copy_data_start>:
+.Loc.8():
+  9e:	ae 3e       	cpi	r26, 0xEE	; 238
+
+000000a0 <.Loc.9>:
+.Loc.9():
+  a0:	b1 07       	cpc	r27, r17
+
+000000a2 <.Loc.10>:
+.Loc.10():
+  a2:	d9 f7       	brne	.-10     	; 0x9a <.L__do_copy_data_loop>
+
+000000a4 <__do_clear_bss>:
+L0^A():
+  a4:	23 e0       	ldi	r18, 0x03	; 3
+
+000000a6 <.Loc.1>:
+.Loc.1():
+  a6:	ae ee       	ldi	r26, 0xEE	; 238
+
+000000a8 <.Loc.2>:
+.Loc.2():
+  a8:	b0 e0       	ldi	r27, 0x00	; 0
+
+000000aa <.Loc.3>:
+.Loc.3():
+  aa:	01 c0       	rjmp	.+2      	; 0xae <.Loc.5>
+
+000000ac <.Loc.4>:
+.do_clear_bss_loop():
+  ac:	1d 92       	st	X+, r1
+
+000000ae <.Loc.5>:
+.do_clear_bss_start():
+  ae:	aa 37       	cpi	r26, 0x7A	; 122
+
+000000b0 <.Loc.6>:
+.Loc.6():
+  b0:	b2 07       	cpc	r27, r18
+
+000000b2 <.Loc.7>:
+.Loc.7():
+  b2:	e1 f7       	brne	.-8      	; 0xac <.Loc.4>
+
+000000b4 <__do_global_ctors>:
+L0^A():
+  b4:	10 e0       	ldi	r17, 0x00	; 0
+
+000000b6 <.Loc.1>:
+.Loc.1():
+  b6:	c1 e4       	ldi	r28, 0x41	; 65
+
+000000b8 <.Loc.2>:
+.Loc.2():
+  b8:	d0 e0       	ldi	r29, 0x00	; 0
+
+000000ba <.Loc.3>:
+.Loc.3():
+  ba:	03 c0       	rjmp	.+6      	; 0xc2 <.L__do_global_ctors_start>
+
+000000bc <.L__do_global_ctors_loop>:
+.Loc.4():
+  bc:	21 97       	sbiw	r28, 0x01	; 1
+
+000000be <.Loc.5>:
+.Loc.5():
+  be:	fe 01       	movw	r30, r28
+
+000000c0 <.Loc.6>:
+.Loc.6():
+  c0:	c6 d5       	rcall	.+2956   	; 0xc4e <__tablejump2__>
+
+000000c2 <.L__do_global_ctors_start>:
+.Loc.7():
+  c2:	c0 34       	cpi	r28, 0x40	; 64
+
+000000c4 <.Loc.8>:
+.Loc.8():
+  c4:	d1 07       	cpc	r29, r17
+
+000000c6 <.Loc.9>:
+.Loc.9():
+  c6:	d1 f7       	brne	.-12     	; 0xbc <.L__do_global_ctors_loop>
+
+000000c8 <L0^A>:
+L0^A():
+  c8:	d2 d2       	rcall	.+1444   	; 0x66e <main>
+  ca:	c7 c5       	rjmp	.+2958   	; 0xc5a <_exit>
+
+000000cc <__bad_interrupt>:
+__vector_1():
+  cc:	99 cf       	rjmp	.-206    	; 0x0 <__vectors>
+
+000000ce <SPIClass::transfer(unsigned char)>:
+SPIClass::transfer(unsigned char):
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/libraries/SPI/src/SPI.h:212
+    SPSR = settings.spsr;
+  }
+
+  // Write to the SPI bus (MOSI pin) and also receive (MISO pin)
+  inline static uint8_t transfer(uint8_t data) {
+    SPDR = data;
+  ce:	8f b9       	out	0x0f, r24	; 15
+
+000000d0 <.Loc.3>:
+	...
+
+000000d2 <.L2>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/libraries/SPI/src/SPI.h:220 (discriminator 1)
+     * loop form iterating when running at the maximum speed. This gives
+     * about 10% more speed, even if it seems counter-intuitive. At lower
+     * speeds it is unnoticed.
+     */
+    asm volatile("nop");
+    while (!(SPSR & _BV(SPIF))) ; // wait
+  d2:	77 9b       	sbis	0x0e, 7	; 14
+  d4:	fe cf       	rjmp	.-4      	; 0xd2 <.L2>
+
+000000d6 <.Loc.6>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/libraries/SPI/src/SPI.h:222
+    return SPDR;
+  }
+  d6:	8f b1       	in	r24, 0x0f	; 15
+
+000000d8 <.Loc.8>:
+  d8:	08 95       	ret
+
+000000da <SPIFlash::_transferAddress() [clone .constprop.0] [clone .isra.0]>:
+SPIFlash::_transferAddress():
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:141
+   }
+ }
+
+ // Transfer Address.
+ bool SPIFlash::_transferAddress(void) {
+   if (address4ByteEnabled) {
+  da:	80 91 a6 02 	lds	r24, 0x02A6	; 0x8002a6 <flash+0x10>
+  de:	80 30       	cpi	r24, 0x00	; 0
+  e0:	19 f0       	breq	.+6      	; 0xe8 <.L5>
+
+000000e2 <.LBB18>:
+SPIFlash::_nextByte(char, unsigned char):
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:247
+     return rxData.val;
+   #else
+     return xfer(data);
+   #endif
+ #else
+   return xfer(data);
+  e2:	80 91 f3 02 	lds	r24, 0x02F3	; 0x8002f3 <flash+0x5d>
+  e6:	f3 df       	rcall	.-26     	; 0xce <SPIClass::transfer(unsigned char)>
+
+000000e8 <.L5>:
+  e8:	80 91 f2 02 	lds	r24, 0x02F2	; 0x8002f2 <flash+0x5c>
+  ec:	f0 df       	rcall	.-32     	; 0xce <SPIClass::transfer(unsigned char)>
+
+000000ee <.LBB22>:
+  ee:	80 91 f1 02 	lds	r24, 0x02F1	; 0x8002f1 <flash+0x5b>
+  f2:	ed df       	rcall	.-38     	; 0xce <SPIClass::transfer(unsigned char)>
+
+000000f4 <.LBB24>:
+  f4:	80 91 f0 02 	lds	r24, 0x02F0	; 0x8002f0 <flash+0x5a>
+  f8:	ea cf       	rjmp	.-44     	; 0xce <SPIClass::transfer(unsigned char)>
+
+000000fa <micros>:
+micros():
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/wiring.c:237
+  unsigned char f; // temporary storage for millis fraction counter
+  unsigned char q = 0; // record whether an overflow is flagged
+#endif
+  // t will be the number where the timer0 counter stopped
+  uint8_t t;
+  uint8_t oldSREG = SREG;
+  fa:	3f b7       	in	r19, 0x3f	; 63
+
+000000fc <.LVL8>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/wiring.c:240
+
+  // Stop all interrupts
+  cli();
+  fc:	f8 94       	cli
+
+000000fe <.Loc.22>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/wiring.c:247
+#ifdef CORRECT_EXACT_MICROS
+  // combine exact millisec and 8usec counters
+  m = timer0_millis;
+  f = timer0_fract;
+#else
+  m = timer0_overflow_count;
+  fe:	80 91 8c 02 	lds	r24, 0x028C	; 0x80028c <timer0_overflow_count>
+ 102:	90 91 8d 02 	lds	r25, 0x028D	; 0x80028d <timer0_overflow_count+0x1>
+ 106:	a0 91 8e 02 	lds	r26, 0x028E	; 0x80028e <timer0_overflow_count+0x2>
+ 10a:	b0 91 8f 02 	lds	r27, 0x028F	; 0x80028f <timer0_overflow_count+0x3>
+
+0000010e <.LVL9>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/wiring.c:252
+#endif
+
+  // TCNT0 : The Timer Counter Register
+#if defined(TCNT0)
+  t = TCNT0;
+ 10e:	22 b7       	in	r18, 0x32	; 50
+
+00000110 <.LVL10>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/wiring.c:268
+    m++;
+#else
+    q = 1;
+#endif
+#else
+  if ((TIFR & _BV(TOV0)) && (t < 255))
+ 110:	08 b6       	in	r0, 0x38	; 56
+ 112:	00 fe       	sbrs	r0, 0
+ 114:	04 c0       	rjmp	.+8      	; 0x11e <.L12>
+
+00000116 <.Loc.28>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/wiring.c:268 (discriminator 1)
+ 116:	2f 3f       	cpi	r18, 0xFF	; 255
+ 118:	11 f0       	breq	.+4      	; 0x11e <.L12>
+
+0000011a <.Loc.29>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/wiring.c:270
+#ifndef CORRECT_EXACT_MICROS
+    m++;
+ 11a:	01 96       	adiw	r24, 0x01	; 1
+ 11c:	a1 1d       	adc	r26, r1
+
+0000011e <.L12>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/wiring.c:276
+#else
+    q = 1;
+#endif
+#endif
+  // Restore SREG
+  SREG = oldSREG;
+ 11e:	3f bf       	out	0x3f, r19	; 63
+
+00000120 <.Loc.33>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/wiring.c:292
+      ((t * MICROSECONDS_PER_TIMER0_OVERFLOW) >> 8);
+  return q ? m + MICROSECONDS_PER_TIMER0_OVERFLOW : m;
+#elif 1
+  /* All power-of-two Megahertz frequencies enter here, as well as 12.8 MHz.
+     We only end up here if right shift before multiplication is exact. */
+  return ((m << 8) + t) * (MICROSECONDS_PER_TIMER0_OVERFLOW >> 8);
+ 120:	ba 2f       	mov	r27, r26
+ 122:	a9 2f       	mov	r26, r25
+ 124:	98 2f       	mov	r25, r24
+
+00000126 <.Loc.35>:
+ 126:	82 2f       	mov	r24, r18
+
+00000128 <.Loc.36>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/wiring.c:393
+  // m & t are multiplied by 4 (since it was already multiplied by 256)
+  // t is multiplied by 4
+  return ((m << 8) + t) * (64 / clockCyclesPerMicrosecond());
+#endif
+#endif // 0
+}
+ 128:	bf 73       	andi	r27, 0x3F	; 63
+ 12a:	b0 64       	ori	r27, 0x40	; 64
+
+0000012c <.L1^B1>:
+ 12c:	88 0f       	add	r24, r24
+ 12e:	99 1f       	adc	r25, r25
+ 130:	aa 1f       	adc	r26, r26
+ 132:	bb 1f       	adc	r27, r27
+ 134:	d8 f7       	brcc	.-10     	; 0x12c <.L1^B1>
+ 136:	bc 01       	movw	r22, r24
+ 138:	cd 01       	movw	r24, r26
+ 13a:	08 95       	ret
+
+0000013c <pinMode.constprop.0>:
+pinMode():
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/wiring_digital.c:31
+#include "wiring_private.h"
+#include "pins_arduino.h"
+
+void pinMode(uint8_t pin, uint8_t mode)
+{
+  uint8_t bit = digitalPinToBitMask(pin);
+ 13c:	90 e0       	ldi	r25, 0x00	; 0
+
+0000013e <.LVL13>:
+ 13e:	fc 01       	movw	r30, r24
+ 140:	e8 59       	subi	r30, 0x98	; 152
+ 142:	ff 4f       	sbci	r31, 0xFF	; 255
+
+00000144 <.Loc.40>:
+ 144:	24 91       	lpm	r18, Z
+
+00000146 <.LBB34>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/wiring_digital.c:32
+  uint8_t port = digitalPinToPort(pin);
+ 146:	8f 5a       	subi	r24, 0xAF	; 175
+ 148:	9f 4f       	sbci	r25, 0xFF	; 255
+
+0000014a <.Loc.43>:
+ 14a:	fc 01       	movw	r30, r24
+
+0000014c <.Loc.44>:
+ 14c:	84 91       	lpm	r24, Z
+
+0000014e <.LBE34>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/wiring_digital.c:35
+  volatile uint8_t *reg, *out;
+
+  if (port == NOT_A_PIN) return;
+ 14e:	80 30       	cpi	r24, 0x00	; 0
+ 150:	99 f0       	breq	.+38     	; 0x178 <.L16>
+
+00000152 <.LBB35>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/wiring_digital.c:38
+
+  // JWS: can I let the optimizer do this?
+  reg = portModeRegister(port);
+ 152:	90 e0       	ldi	r25, 0x00	; 0
+ 154:	88 0f       	add	r24, r24
+ 156:	99 1f       	adc	r25, r25
+
+00000158 <.Loc.48>:
+ 158:	fc 01       	movw	r30, r24
+
+0000015a <.Loc.49>:
+ 15a:	e9 5b       	subi	r30, 0xB9	; 185
+ 15c:	ff 4f       	sbci	r31, 0xFF	; 255
+
+0000015e <.LVL21>:
+ 15e:	a5 91       	lpm	r26, Z+
+ 160:	b5 91       	lpm	r27, Z+
+
+00000162 <.LBB36>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/wiring_digital.c:39
+  out = portOutputRegister(port);
+ 162:	83 5c       	subi	r24, 0xC3	; 195
+ 164:	9f 4f       	sbci	r25, 0xFF	; 255
+ 166:	fc 01       	movw	r30, r24
+
+00000168 <.LVL23>:
+ 168:	85 91       	lpm	r24, Z+
+ 16a:	95 91       	lpm	r25, Z+
+
+0000016c <.LBB37>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/wiring_digital.c:54
+    cli();
+    *reg &= ~bit;
+    *out |= bit;
+    SREG = oldSREG;
+  } else {
+    uint8_t oldSREG = SREG;
+ 16c:	8f b7       	in	r24, 0x3f	; 63
+
+0000016e <.LVL25>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/wiring_digital.c:55
+    cli();
+ 16e:	f8 94       	cli
+
+00000170 <.Loc.57>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/wiring_digital.c:56
+    *reg |= bit;
+ 170:	9c 91       	ld	r25, X
+
+00000172 <.Loc.58>:
+ 172:	29 2b       	or	r18, r25
+
+00000174 <.Loc.59>:
+ 174:	2c 93       	st	X, r18
+
+00000176 <.Loc.60>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/wiring_digital.c:57
+    SREG = oldSREG;
+ 176:	8f bf       	out	0x3f, r24	; 63
+
+00000178 <.L16>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/wiring_digital.c:59
+  }
+}
+ 178:	08 95       	ret
+
+0000017a <digitalWrite>:
+digitalWrite():
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/wiring_digital.c:189
+  }
+}
+
+void digitalWrite(uint8_t pin, uint8_t val)
+{
+  uint8_t timer = digitalPinToTimer(pin);
+ 17a:	90 e0       	ldi	r25, 0x00	; 0
+
+0000017c <.LVL29>:
+ 17c:	fc 01       	movw	r30, r24
+ 17e:	ea 5d       	subi	r30, 0xDA	; 218
+ 180:	ff 4f       	sbci	r31, 0xFF	; 255
+
+00000182 <.Loc.67>:
+ 182:	34 91       	lpm	r19, Z
+
+00000184 <.LBB47>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/wiring_digital.c:190
+  uint8_t bit = digitalPinToBitMask(pin);
+ 184:	fc 01       	movw	r30, r24
+
+00000186 <.Loc.73>:
+ 186:	e8 59       	subi	r30, 0x98	; 152
+ 188:	ff 4f       	sbci	r31, 0xFF	; 255
+
+0000018a <.Loc.74>:
+ 18a:	24 91       	lpm	r18, Z
+
+0000018c <.LBB48>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/wiring_digital.c:191
+  uint8_t port = digitalPinToPort(pin);
+ 18c:	8f 5a       	subi	r24, 0xAF	; 175
+ 18e:	9f 4f       	sbci	r25, 0xFF	; 255
+
+00000190 <.Loc.80>:
+ 190:	fc 01       	movw	r30, r24
+
+00000192 <.Loc.81>:
+ 192:	e4 91       	lpm	r30, Z
+
+00000194 <.LBE48>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/wiring_digital.c:194
+  volatile uint8_t *out;
+
+  if (port == NOT_A_PIN) return;
+ 194:	e0 30       	cpi	r30, 0x00	; 0
+ 196:	e1 f0       	breq	.+56     	; 0x1d0 <.L21>
+
+00000198 <.Loc.87>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/wiring_digital.c:198
+
+  // If the pin that support PWM output, we need to turn it off
+  // before doing a digital write.
+  if (timer != NOT_ON_TIMER) turnOffPWM(timer);
+ 198:	30 30       	cpi	r19, 0x00	; 0
+ 19a:	49 f0       	breq	.+18     	; 0x1ae <.L23>
+
+0000019c <.LBB49>:
+turnOffPWM():
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/wiring_digital.c:77
+  switch (timer)
+ 19c:	35 30       	cpi	r19, 0x05	; 5
+ 19e:	c9 f0       	breq	.+50     	; 0x1d2 <.L24>
+ 1a0:	37 30       	cpi	r19, 0x07	; 7
+ 1a2:	d1 f0       	breq	.+52     	; 0x1d8 <.L25>
+ 1a4:	34 30       	cpi	r19, 0x04	; 4
+ 1a6:	19 f4       	brne	.+6      	; 0x1ae <.L23>
+
+000001a8 <.LBB51>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/wiring_digital.c:82
+        TCCR1A &= ~_BV(COM1A1);
+ 1a8:	8f b5       	in	r24, 0x2f	; 47
+
+000001aa <.Loc.96>:
+ 1aa:	8f 77       	andi	r24, 0x7F	; 127
+
+000001ac <.L34>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/wiring_digital.c:87
+        TCCR1A &= ~_BV(COM1B1);
+ 1ac:	8f bd       	out	0x2f, r24	; 47
+
+000001ae <.L23>:
+digitalWrite():
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/wiring_digital.c:200
+
+  out = portOutputRegister(port);
+ 1ae:	f0 e0       	ldi	r31, 0x00	; 0
+ 1b0:	ee 0f       	add	r30, r30
+ 1b2:	ff 1f       	adc	r31, r31
+
+000001b4 <.Loc.103>:
+ 1b4:	e3 5c       	subi	r30, 0xC3	; 195
+ 1b6:	ff 4f       	sbci	r31, 0xFF	; 255
+
+000001b8 <.LVL44>:
+ 1b8:	a5 91       	lpm	r26, Z+
+ 1ba:	b5 91       	lpm	r27, Z+
+
+000001bc <.LBE54>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/wiring_digital.c:202
+
+  uint8_t oldSREG = SREG;
+ 1bc:	9f b7       	in	r25, 0x3f	; 63
+
+000001be <.LVL46>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/wiring_digital.c:203
+  cli();
+ 1be:	f8 94       	cli
+
+000001c0 <.Loc.110>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/wiring_digital.c:206
+
+  if (val == LOW) {
+    *out &= ~bit;
+ 1c0:	8c 91       	ld	r24, X
+
+000001c2 <.Loc.112>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/wiring_digital.c:205
+  if (val == LOW) {
+ 1c2:	61 11       	cpse	r22, r1
+ 1c4:	0d c0       	rjmp	.+26     	; 0x1e0 <.L26>
+
+000001c6 <.Loc.113>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/wiring_digital.c:206
+    *out &= ~bit;
+ 1c6:	20 95       	com	r18
+
+000001c8 <.Loc.115>:
+ 1c8:	e2 2f       	mov	r30, r18
+ 1ca:	e8 23       	and	r30, r24
+ 1cc:	ec 93       	st	X, r30
+
+000001ce <.L27>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/wiring_digital.c:211
+  } else {
+    *out |= bit;
+  }
+
+  SREG = oldSREG;
+ 1ce:	9f bf       	out	0x3f, r25	; 63
+
+000001d0 <.L21>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/wiring_digital.c:212
+}
+ 1d0:	08 95       	ret
+
+000001d2 <.L24>:
+turnOffPWM():
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/wiring_digital.c:87
+        TCCR1A &= ~_BV(COM1B1);
+ 1d2:	8f b5       	in	r24, 0x2f	; 47
+
+000001d4 <.Loc.121>:
+ 1d4:	8f 7d       	andi	r24, 0xDF	; 223
+ 1d6:	ea cf       	rjmp	.-44     	; 0x1ac <.L34>
+
+000001d8 <.L25>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/wiring_digital.c:99
+        TCCR2 &= ~_BV(COM21);
+ 1d8:	85 b5       	in	r24, 0x25	; 37
+
+000001da <.Loc.124>:
+ 1da:	8f 7d       	andi	r24, 0xDF	; 223
+ 1dc:	85 bd       	out	0x25, r24	; 37
+
+000001de <.Loc.125>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/wiring_digital.c:100
+        break;
+ 1de:	e7 cf       	rjmp	.-50     	; 0x1ae <.L23>
+
+000001e0 <.L26>:
+digitalWrite():
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/wiring_digital.c:208
+    *out |= bit;
+ 1e0:	82 2b       	or	r24, r18
+ 1e2:	8c 93       	st	X, r24
+ 1e4:	f4 cf       	rjmp	.-24     	; 0x1ce <.L27>
+
+000001e6 <SPIFlash::_beginSPI(unsigned char) [clone .constprop.0] [clone .isra.0]>:
+SPIFlash::_beginSPI(unsigned char):
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:187
+ bool SPIFlash::_beginSPI(uint8_t opcode) {
+ 1e6:	cf 93       	push	r28
+ 1e8:	c8 2f       	mov	r28, r24
+
+000001ea <.Loc.131>:
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:188
+   if (!SPIBusState) {
+ 1ea:	80 91 a4 02 	lds	r24, 0x02A4	; 0x8002a4 <flash+0xe>
+
+000001ee <.Loc.132>:
+ 1ee:	81 11       	cpse	r24, r1
+ 1f0:	0f c0       	rjmp	.+30     	; 0x210 <.L36>
+
+000001f2 <.LBB110>:
+SPIFlash::_startSPIBus():
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:171
+       _SPCR = SPCR;
+ 1f2:	8d b1       	in	r24, 0x0d	; 13
+
+000001f4 <.Loc.134>:
+ 1f4:	80 93 ad 02 	sts	0x02AD, r24	; 0x8002ad <flash+0x17>
+
+000001f8 <.Loc.135>:
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:172
+       _SPSR = SPSR;
+ 1f8:	8e b1       	in	r24, 0x0e	; 14
+
+000001fa <.Loc.136>:
+ 1fa:	80 93 ae 02 	sts	0x02AE, r24	; 0x8002ae <flash+0x18>
+ 1fe:	90 91 96 02 	lds	r25, 0x0296	; 0x800296 <flash>
+
+00000202 <.LVL59>:
+ 202:	80 91 97 02 	lds	r24, 0x0297	; 0x800297 <flash+0x1>
+
+00000206 <.LBB112>:
+SPIClass::beginTransaction(SPISettings):
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/libraries/SPI/src/SPI.h:206
+    SPCR = settings.spcr;
+ 206:	9d b9       	out	0x0d, r25	; 13
+
+00000208 <.Loc.139>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/libraries/SPI/src/SPI.h:207
+    SPSR = settings.spsr;
+ 208:	8e b9       	out	0x0e, r24	; 14
+
+0000020a <.LBE112>:
+SPIFlash::_startSPIBus():
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:182
+   SPIBusState = true;
+ 20a:	81 e0       	ldi	r24, 0x01	; 1
+ 20c:	80 93 a4 02 	sts	0x02A4, r24	; 0x8002a4 <flash+0xe>
+
+00000210 <.L36>:
+SPIFlash::_beginSPI(unsigned char):
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:191
+   CHIP_SELECT
+ 210:	60 e0       	ldi	r22, 0x00	; 0
+ 212:	80 91 9b 02 	lds	r24, 0x029B	; 0x80029b <flash+0x5>
+ 216:	b1 df       	rcall	.-158    	; 0x17a <digitalWrite>
+
+00000218 <.LVL63>:
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:192
+   switch (opcode) {
+ 218:	c3 30       	cpi	r28, 0x03	; 3
+ 21a:	21 f0       	breq	.+8      	; 0x224 <.L37>
+ 21c:	cb 30       	cpi	r28, 0x0B	; 11
+ 21e:	31 f0       	breq	.+12     	; 0x22c <.L38>
+
+00000220 <.LBB114>:
+SPIFlash::_nextByte(char, unsigned char):
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:247
+   return xfer(data);
+ 220:	8c 2f       	mov	r24, r28
+ 222:	08 c0       	rjmp	.+16     	; 0x234 <.L41>
+
+00000224 <.L37>:
+ 224:	83 e0       	ldi	r24, 0x03	; 3
+ 226:	53 df       	rcall	.-346    	; 0xce <SPIClass::transfer(unsigned char)>
+
+00000228 <.LBE117>:
+SPIFlash::_beginSPI(unsigned char):
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:229
+ }
+ 228:	cf 91       	pop	r28
+
+0000022a <.Loc.149>:
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:195
+     _transferAddress();
+ 22a:	57 cf       	rjmp	.-338    	; 0xda <SPIFlash::_transferAddress() [clone .constprop.0] [clone .isra.0]>
+
+0000022c <.L38>:
+SPIFlash::_nextByte(char, unsigned char):
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:247
+   return xfer(data);
+ 22c:	8b e0       	ldi	r24, 0x0B	; 11
+ 22e:	4f df       	rcall	.-354    	; 0xce <SPIClass::transfer(unsigned char)>
+
+00000230 <.LBE119>:
+SPIFlash::_beginSPI(unsigned char):
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:205
+     _transferAddress();
+ 230:	54 df       	rcall	.-344    	; 0xda <SPIFlash::_transferAddress() [clone .constprop.0] [clone .isra.0]>
+
+00000232 <.LBB121>:
+SPIFlash::_nextByte(char, unsigned char):
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:247
+   return xfer(data);
+ 232:	8e ee       	ldi	r24, 0xEE	; 238
+
+00000234 <.L41>:
+SPIFlash::_beginSPI(unsigned char):
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:229
+ }
+ 234:	cf 91       	pop	r28
+
+00000236 <.Loc.156>:
+SPIFlash::_nextByte(char, unsigned char):
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:247
+   return xfer(data);
+ 236:	4b cf       	rjmp	.-362    	; 0xce <SPIClass::transfer(unsigned char)>
+
+00000238 <SPIFlash::_readStat1() [clone .constprop.0]>:
+SPIFlash::_readStat1():
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:332
+ #endif
+   SPIBusState = false;
+ }
+
+ // Checks if status register 1 can be accessed - used to check chip status, during powerdown and power up and for debugging
+ uint8_t SPIFlash::_readStat1(void) {
+ 238:	cf 93       	push	r28
+ 23a:	df 93       	push	r29
+
+0000023c <.Loc.158>:
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:333
+   _beginSPI(READSTAT1);
+ 23c:	85 e0       	ldi	r24, 0x05	; 5
+ 23e:	d3 df       	rcall	.-90     	; 0x1e6 <SPIFlash::_beginSPI(unsigned char) [clone .constprop.0] [clone .isra.0]>
+
+00000240 <.LBB126>:
+SPIFlash::_nextByte(char, unsigned char):
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:247
+   return xfer(data);
+ 240:	80 e0       	ldi	r24, 0x00	; 0
+ 242:	45 df       	rcall	.-374    	; 0xce <SPIClass::transfer(unsigned char)>
+
+00000244 <.LBE126>:
+SPIFlash::_readStat1():
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:334 (discriminator 1)
+   stat1 = _nextByte(READ);
+ 244:	c6 e9       	ldi	r28, 0x96	; 150
+ 246:	d2 e0       	ldi	r29, 0x02	; 2
+ 248:	8c 8b       	std	Y+20, r24	; 0x14
+
+0000024a <.Loc.162>:
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:335
+   CHIP_DESELECT
+ 24a:	61 e0       	ldi	r22, 0x01	; 1
+ 24c:	8d 81       	ldd	r24, Y+5	; 0x05
+ 24e:	95 df       	rcall	.-214    	; 0x17a <digitalWrite>
+
+00000250 <.LVL77>:
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:337
+   return stat1;
+ }
+ 250:	8c 89       	ldd	r24, Y+20	; 0x14
+ 252:	df 91       	pop	r29
+ 254:	cf 91       	pop	r28
+ 256:	08 95       	ret
+
+00000258 <SPIFlash::_readStat3() [clone .constprop.0]>:
+SPIFlash::_readStat3():
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:349
+   CHIP_DESELECT
+   return stat2;
+ }
+
+ // Checks if status register 3 can be accessed, if yes, reads and returns it
+ uint8_t SPIFlash::_readStat3(void) {
+ 258:	cf 93       	push	r28
+ 25a:	df 93       	push	r29
+
+0000025c <.Loc.165>:
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:350
+   _beginSPI(READSTAT3);
+ 25c:	85 e1       	ldi	r24, 0x15	; 21
+ 25e:	c3 df       	rcall	.-122    	; 0x1e6 <SPIFlash::_beginSPI(unsigned char) [clone .constprop.0] [clone .isra.0]>
+
+00000260 <.LBB130>:
+SPIFlash::_nextByte(char, unsigned char):
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:247
+   return xfer(data);
+ 260:	80 e0       	ldi	r24, 0x00	; 0
+ 262:	35 df       	rcall	.-406    	; 0xce <SPIClass::transfer(unsigned char)>
+
+00000264 <.LBE130>:
+SPIFlash::_readStat3():
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:351 (discriminator 1)
+   stat3 = _nextByte(READ);
+ 264:	c6 e9       	ldi	r28, 0x96	; 150
+ 266:	d2 e0       	ldi	r29, 0x02	; 2
+ 268:	8e 8b       	std	Y+22, r24	; 0x16
+
+0000026a <.Loc.169>:
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:353
+   //stat2 = _nextByte(READ);
+   CHIP_DESELECT
+ 26a:	61 e0       	ldi	r22, 0x01	; 1
+ 26c:	8d 81       	ldd	r24, Y+5	; 0x05
+ 26e:	85 df       	rcall	.-246    	; 0x17a <digitalWrite>
+
+00000270 <.LVL81>:
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:355
+   return stat3;
+ }
+ 270:	8e 89       	ldd	r24, Y+22	; 0x16
+ 272:	df 91       	pop	r29
+ 274:	cf 91       	pop	r28
+ 276:	08 95       	ret
+
+00000278 <HardwareSerial::_tx_udr_empty_irq()>:
+HardwareSerial::_tx_udr_empty_irq():
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/HardwareSerial.cpp:90
+#endif
+
+// Actual interrupt handlers //////////////////////////////////////////////////////////////
+
+void HardwareSerial::_tx_udr_empty_irq(void)
+{
+ 278:	fc 01       	movw	r30, r24
+
+0000027a <.Loc.173>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/HardwareSerial.cpp:93
+  // If interrupts are enabled, there must be more data in the output
+  // buffer. Send the next byte
+  unsigned char c = _tx_buffer[_tx_buffer_tail];
+ 27a:	a4 8d       	ldd	r26, Z+28	; 0x1c
+
+0000027c <.Loc.175>:
+ 27c:	a8 0f       	add	r26, r24
+ 27e:	b9 2f       	mov	r27, r25
+ 280:	b1 1d       	adc	r27, r1
+ 282:	a3 5a       	subi	r26, 0xA3	; 163
+ 284:	bf 4f       	sbci	r27, 0xFF	; 255
+ 286:	2c 91       	ld	r18, X
+
+00000288 <.LVL83>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/HardwareSerial.cpp:94
+  _tx_buffer_tail = (_tx_buffer_tail + 1) % SERIAL_TX_BUFFER_SIZE;
+ 288:	84 8d       	ldd	r24, Z+28	; 0x1c
+
+0000028a <.Loc.178>:
+ 28a:	01 96       	adiw	r24, 0x01	; 1
+
+0000028c <.Loc.179>:
+ 28c:	8f 73       	andi	r24, 0x3F	; 63
+
+0000028e <.Loc.180>:
+ 28e:	84 8f       	std	Z+28, r24	; 0x1c
+
+00000290 <.Loc.181>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/HardwareSerial.cpp:96
+
+  *_udr = c;
+ 290:	a6 89       	ldd	r26, Z+22	; 0x16
+ 292:	b7 89       	ldd	r27, Z+23	; 0x17
+
+00000294 <.Loc.183>:
+ 294:	2c 93       	st	X, r18
+
+00000296 <.Loc.184>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/HardwareSerial.cpp:106
+  // written to the rest.
+
+  #ifdef MPCM0
+    *_ucsra = ((*_ucsra) & ((1 << U2X0) | (1 << MPCM0))) | (1 << TXC0);
+  #else
+    *_ucsra = ((*_ucsra) & ((1 << U2X0) | (1 << TXC0)));
+ 296:	a0 89       	ldd	r26, Z+16	; 0x10
+ 298:	b1 89       	ldd	r27, Z+17	; 0x11
+
+0000029a <.Loc.186>:
+ 29a:	8c 91       	ld	r24, X
+ 29c:	82 74       	andi	r24, 0x42	; 66
+
+0000029e <.Loc.187>:
+ 29e:	8c 93       	st	X, r24
+
+000002a0 <.Loc.188>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/HardwareSerial.cpp:109
+  #endif
+
+  if (_tx_buffer_head == _tx_buffer_tail) {
+ 2a0:	93 8d       	ldd	r25, Z+27	; 0x1b
+
+000002a2 <.Loc.190>:
+ 2a2:	84 8d       	ldd	r24, Z+28	; 0x1c
+
+000002a4 <.Loc.191>:
+ 2a4:	98 13       	cpse	r25, r24
+ 2a6:	06 c0       	rjmp	.+12     	; 0x2b4 <.L44>
+
+000002a8 <.LBB134>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/HardwareSerial.cpp:111
+    // Buffer empty, so disable interrupts
+    *_ucsrb &= ~_BV(UDRIE0);
+ 2a8:	02 88       	ldd	r0, Z+18	; 0x12
+ 2aa:	f3 89       	ldd	r31, Z+19	; 0x13
+ 2ac:	e0 2d       	mov	r30, r0
+
+000002ae <.Loc.196>:
+ 2ae:	80 81       	ld	r24, Z
+ 2b0:	8f 7d       	andi	r24, 0xDF	; 223
+ 2b2:	80 83       	st	Z, r24
+
+000002b4 <.L44>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/HardwareSerial.cpp:113
+  }
+}
+ 2b4:	08 95       	ret
+
+000002b6 <HardwareSerial::available()>:
+HardwareSerial::available():
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/HardwareSerial.cpp:164
+  // clear any received data
+  _rx_buffer_head = _rx_buffer_tail;
+}
+
+int HardwareSerial::available(void)
+{
+ 2b6:	fc 01       	movw	r30, r24
+
+000002b8 <.Loc.201>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/HardwareSerial.cpp:165
+  return ((unsigned int)(SERIAL_RX_BUFFER_SIZE + _rx_buffer_head - _rx_buffer_tail)) % SERIAL_RX_BUFFER_SIZE;
+ 2b8:	91 8d       	ldd	r25, Z+25	; 0x19
+
+000002ba <.Loc.203>:
+ 2ba:	22 8d       	ldd	r18, Z+26	; 0x1a
+
+000002bc <.Loc.204>:
+ 2bc:	89 2f       	mov	r24, r25
+
+000002be <.Loc.205>:
+ 2be:	90 e0       	ldi	r25, 0x00	; 0
+
+000002c0 <.Loc.206>:
+ 2c0:	80 5c       	subi	r24, 0xC0	; 192
+ 2c2:	9f 4f       	sbci	r25, 0xFF	; 255
+
+000002c4 <.Loc.207>:
+ 2c4:	82 1b       	sub	r24, r18
+ 2c6:	90 40       	sbci	r25, 0x00	; 0
+
+000002c8 <.Loc.208>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/HardwareSerial.cpp:166
+}
+ 2c8:	8f 73       	andi	r24, 0x3F	; 63
+ 2ca:	90 e0       	ldi	r25, 0x00	; 0
+ 2cc:	08 95       	ret
+
+000002ce <Serial0_available()>:
+Serial0_available():
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/HardwareSerial0.cpp:76
+#endif
+
+// Function that can be weakly referenced by serialEventRun to prevent
+// pulling in this file if it's not otherwise used.
+bool Serial0_available() {
+  return Serial.available();
+ 2ce:	8f ee       	ldi	r24, 0xEF	; 239
+ 2d0:	91 e0       	ldi	r25, 0x01	; 1
+ 2d2:	f1 df       	rcall	.-30     	; 0x2b6 <HardwareSerial::available()>
+
+000002d4 <.LVL90>:
+ 2d4:	9c 01       	movw	r18, r24
+
+000002d6 <.Loc.212>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/HardwareSerial0.cpp:76 (discriminator 1)
+ 2d6:	81 e0       	ldi	r24, 0x01	; 1
+ 2d8:	23 2b       	or	r18, r19
+ 2da:	09 f4       	brne	.+2      	; 0x2de <.L48>
+ 2dc:	80 e0       	ldi	r24, 0x00	; 0
+
+000002de <.L48>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/HardwareSerial0.cpp:77
+}
+ 2de:	08 95       	ret
+
+000002e0 <serialEventRun()>:
+serialEventRun():
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/HardwareSerial.cpp:67 (discriminator 1)
+  if (Serial0_available && serialEvent && Serial0_available()) serialEvent();
+ 2e0:	80 e0       	ldi	r24, 0x00	; 0
+ 2e2:	90 e0       	ldi	r25, 0x00	; 0
+ 2e4:	89 2b       	or	r24, r25
+ 2e6:	19 f0       	breq	.+6      	; 0x2ee <.L50>
+
+000002e8 <.LBB138>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/HardwareSerial.cpp:67 (discriminator 2)
+ 2e8:	f2 df       	rcall	.-28     	; 0x2ce <Serial0_available()>
+
+000002ea <.LVL91>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/HardwareSerial.cpp:67 (discriminator 3)
+ 2ea:	81 11       	cpse	r24, r1
+
+000002ec <.Loc.220>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/HardwareSerial.cpp:67 (discriminator 7)
+ 2ec:	89 ce       	rjmp	.-750    	; 0x0 <__vectors>
+
+000002ee <.L50>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/HardwareSerial.cpp:78
+}
+ 2ee:	08 95       	ret
+
+000002f0 <HardwareSerial::peek()>:
+HardwareSerial::peek():
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/HardwareSerial.cpp:169
+
+int HardwareSerial::peek(void)
+{
+ 2f0:	fc 01       	movw	r30, r24
+
+000002f2 <.Loc.225>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/HardwareSerial.cpp:170
+  if (_rx_buffer_head == _rx_buffer_tail) {
+ 2f2:	91 8d       	ldd	r25, Z+25	; 0x19
+
+000002f4 <.Loc.227>:
+ 2f4:	82 8d       	ldd	r24, Z+26	; 0x1a
+
+000002f6 <.Loc.228>:
+ 2f6:	98 17       	cp	r25, r24
+ 2f8:	31 f0       	breq	.+12     	; 0x306 <.L61>
+
+000002fa <.Loc.229>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/HardwareSerial.cpp:173
+    return -1;
+  } else {
+    return _rx_buffer[_rx_buffer_tail];
+ 2fa:	82 8d       	ldd	r24, Z+26	; 0x1a
+
+000002fc <.Loc.231>:
+ 2fc:	e8 0f       	add	r30, r24
+ 2fe:	f1 1d       	adc	r31, r1
+
+00000300 <.Loc.232>:
+ 300:	85 8d       	ldd	r24, Z+29	; 0x1d
+ 302:	90 e0       	ldi	r25, 0x00	; 0
+ 304:	08 95       	ret
+
+00000306 <.L61>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/HardwareSerial.cpp:171
+    return -1;
+ 306:	8f ef       	ldi	r24, 0xFF	; 255
+ 308:	9f ef       	ldi	r25, 0xFF	; 255
+
+0000030a <.Loc.234>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/HardwareSerial.cpp:175
+  }
+}
+ 30a:	08 95       	ret
+
+0000030c <HardwareSerial::read()>:
+HardwareSerial::read():
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/HardwareSerial.cpp:178
+
+int HardwareSerial::read(void)
+{
+ 30c:	fc 01       	movw	r30, r24
+
+0000030e <.Loc.237>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/HardwareSerial.cpp:180
+  // if the head isn't ahead of the tail, we don't have any characters
+  if (_rx_buffer_head == _rx_buffer_tail) {
+ 30e:	91 8d       	ldd	r25, Z+25	; 0x19
+
+00000310 <.Loc.239>:
+ 310:	82 8d       	ldd	r24, Z+26	; 0x1a
+
+00000312 <.Loc.240>:
+ 312:	98 17       	cp	r25, r24
+ 314:	61 f0       	breq	.+24     	; 0x32e <.L64>
+
+00000316 <.LBB141>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/HardwareSerial.cpp:183
+    return -1;
+  } else {
+    unsigned char c = _rx_buffer[_rx_buffer_tail];
+ 316:	a2 8d       	ldd	r26, Z+26	; 0x1a
+
+00000318 <.Loc.243>:
+ 318:	ae 0f       	add	r26, r30
+ 31a:	bf 2f       	mov	r27, r31
+ 31c:	b1 1d       	adc	r27, r1
+ 31e:	5d 96       	adiw	r26, 0x1d	; 29
+ 320:	8c 91       	ld	r24, X
+
+00000322 <.LVL99>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/HardwareSerial.cpp:184
+    _rx_buffer_tail = (rx_buffer_index_t)(_rx_buffer_tail + 1) % SERIAL_RX_BUFFER_SIZE;
+ 322:	92 8d       	ldd	r25, Z+26	; 0x1a
+
+00000324 <.Loc.246>:
+ 324:	9f 5f       	subi	r25, 0xFF	; 255
+
+00000326 <.Loc.247>:
+ 326:	9f 73       	andi	r25, 0x3F	; 63
+
+00000328 <.Loc.248>:
+ 328:	92 8f       	std	Z+26, r25	; 0x1a
+
+0000032a <.Loc.249>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/HardwareSerial.cpp:185
+    return c;
+ 32a:	90 e0       	ldi	r25, 0x00	; 0
+ 32c:	08 95       	ret
+
+0000032e <.L64>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/HardwareSerial.cpp:181
+    return -1;
+ 32e:	8f ef       	ldi	r24, 0xFF	; 255
+ 330:	9f ef       	ldi	r25, 0xFF	; 255
+
+00000332 <.Loc.253>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/HardwareSerial.cpp:187
+  }
+}
+ 332:	08 95       	ret
+
+00000334 <HardwareSerial::availableForWrite()>:
+HardwareSerial::availableForWrite():
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/HardwareSerial.cpp:195
+{
+  tx_buffer_index_t head;
+  tx_buffer_index_t tail;
+
+  TX_BUFFER_ATOMIC {
+    head = _tx_buffer_head;
+ 334:	fc 01       	movw	r30, r24
+ 336:	23 8d       	ldd	r18, Z+27	; 0x1b
+
+00000338 <.LVL102>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/HardwareSerial.cpp:196
+    tail = _tx_buffer_tail;
+ 338:	34 8d       	ldd	r19, Z+28	; 0x1c
+
+0000033a <.LVL103>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/HardwareSerial.cpp:198 (discriminator 1)
+  }
+  if (head >= tail) return SERIAL_TX_BUFFER_SIZE - 1 - head + tail;
+ 33a:	83 2f       	mov	r24, r19
+
+0000033c <.Loc.264>:
+ 33c:	90 e0       	ldi	r25, 0x00	; 0
+
+0000033e <.Loc.265>:
+ 33e:	82 1b       	sub	r24, r18
+ 340:	90 40       	sbci	r25, 0x00	; 0
+
+00000342 <.Loc.266>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/HardwareSerial.cpp:198
+ 342:	23 17       	cp	r18, r19
+ 344:	10 f0       	brcs	.+4      	; 0x34a <.L66>
+
+00000346 <.Loc.267>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/HardwareSerial.cpp:198 (discriminator 1)
+ 346:	cf 96       	adiw	r24, 0x3f	; 63
+ 348:	08 95       	ret
+
+0000034a <.L66>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/HardwareSerial.cpp:199
+  return tail - head - 1;
+ 34a:	01 97       	sbiw	r24, 0x01	; 1
+
+0000034c <.Loc.271>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/HardwareSerial.cpp:200
+}
+ 34c:	08 95       	ret
+
+0000034e <HardwareSerial::flush()>:
+HardwareSerial::flush():
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/HardwareSerial.cpp:203
+
+void HardwareSerial::flush()
+{
+ 34e:	cf 93       	push	r28
+ 350:	df 93       	push	r29
+ 352:	ec 01       	movw	r28, r24
+
+00000354 <.Loc.274>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/HardwareSerial.cpp:207
+  // If we have never written a byte, no need to flush. This special
+  // case is needed since there is no way to force the TXC (transmit
+  // complete) bit to 1 during initialization
+  if (!_written)
+ 354:	88 8d       	ldd	r24, Y+24	; 0x18
+
+00000356 <.Loc.275>:
+ 356:	81 11       	cpse	r24, r1
+ 358:	10 c0       	rjmp	.+32     	; 0x37a <.L69>
+
+0000035a <.L68>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/HardwareSerial.cpp:220
+      if (bit_is_set(*_ucsra, UDRE0))
+        _tx_udr_empty_irq();
+  }
+  // If we get here, nothing is queued anymore (DRIE is disabled) and
+  // the hardware finished tranmission (TXC is set).
+}
+ 35a:	df 91       	pop	r29
+ 35c:	cf 91       	pop	r28
+
+0000035e <.Loc.277>:
+ 35e:	08 95       	ret
+
+00000360 <.L71>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/HardwareSerial.cpp:211
+    if (bit_is_clear(SREG, SREG_I) && bit_is_set(*_ucsrb, UDRIE0))
+ 360:	0f b6       	in	r0, 0x3f	; 63
+ 362:	07 fc       	sbrc	r0, 7
+ 364:	0a c0       	rjmp	.+20     	; 0x37a <.L69>
+
+00000366 <.Loc.280>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/HardwareSerial.cpp:211 (discriminator 1)
+ 366:	80 81       	ld	r24, Z
+
+00000368 <.Loc.281>:
+ 368:	85 ff       	sbrs	r24, 5
+ 36a:	07 c0       	rjmp	.+14     	; 0x37a <.L69>
+
+0000036c <.Loc.282>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/HardwareSerial.cpp:215
+      if (bit_is_set(*_ucsra, UDRE0))
+ 36c:	e8 89       	ldd	r30, Y+16	; 0x10
+ 36e:	f9 89       	ldd	r31, Y+17	; 0x11
+ 370:	80 81       	ld	r24, Z
+
+00000372 <.Loc.284>:
+ 372:	85 ff       	sbrs	r24, 5
+ 374:	02 c0       	rjmp	.+4      	; 0x37a <.L69>
+
+00000376 <.Loc.285>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/HardwareSerial.cpp:216
+        _tx_udr_empty_irq();
+ 376:	ce 01       	movw	r24, r28
+ 378:	7f df       	rcall	.-258    	; 0x278 <HardwareSerial::_tx_udr_empty_irq()>
+
+0000037a <.L69>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/HardwareSerial.cpp:210 (discriminator 1)
+  while (bit_is_set(*_ucsrb, UDRIE0) || bit_is_clear(*_ucsra, TXC0)) {
+ 37a:	ea 89       	ldd	r30, Y+18	; 0x12
+ 37c:	fb 89       	ldd	r31, Y+19	; 0x13
+ 37e:	80 81       	ld	r24, Z
+
+00000380 <.Loc.289>:
+ 380:	85 fd       	sbrc	r24, 5
+ 382:	ee cf       	rjmp	.-36     	; 0x360 <.L71>
+
+00000384 <.Loc.290>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/HardwareSerial.cpp:210 (discriminator 2)
+ 384:	a8 89       	ldd	r26, Y+16	; 0x10
+ 386:	b9 89       	ldd	r27, Y+17	; 0x11
+ 388:	8c 91       	ld	r24, X
+
+0000038a <.Loc.291>:
+ 38a:	86 ff       	sbrs	r24, 6
+ 38c:	e9 cf       	rjmp	.-46     	; 0x360 <.L71>
+ 38e:	e5 cf       	rjmp	.-54     	; 0x35a <.L68>
+
+00000390 <HardwareSerial::write(unsigned char)>:
+HardwareSerial::write(unsigned char):
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/HardwareSerial.cpp:223
+
+size_t HardwareSerial::write(uint8_t c)
+{
+ 390:	ef 92       	push	r14
+ 392:	ff 92       	push	r15
+ 394:	0f 93       	push	r16
+ 396:	1f 93       	push	r17
+ 398:	cf 93       	push	r28
+ 39a:	df 93       	push	r29
+ 39c:	ec 01       	movw	r28, r24
+ 39e:	f6 2e       	mov	r15, r22
+
+000003a0 <.Loc.294>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/HardwareSerial.cpp:224
+  _written = true;
+ 3a0:	81 e0       	ldi	r24, 0x01	; 1
+
+000003a2 <.Loc.296>:
+ 3a2:	88 8f       	std	Y+24, r24	; 0x18
+
+000003a4 <.Loc.297>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/HardwareSerial.cpp:229
+  // If the buffer and the data register is empty, just write the byte
+  // to the data register and be done. This shortcut helps
+  // significantly improve the effective datarate at high (>
+  // 500kbit/s) bitrates, where interrupt overhead becomes a slowdown.
+  if (_tx_buffer_head == _tx_buffer_tail && bit_is_set(*_ucsra, UDRE0)) {
+ 3a4:	9b 8d       	ldd	r25, Y+27	; 0x1b
+
+000003a6 <.Loc.299>:
+ 3a6:	8c 8d       	ldd	r24, Y+28	; 0x1c
+
+000003a8 <.Loc.300>:
+ 3a8:	98 13       	cpse	r25, r24
+ 3aa:	19 c0       	rjmp	.+50     	; 0x3de <.L84>
+
+000003ac <.Loc.301>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/HardwareSerial.cpp:229 (discriminator 1)
+ 3ac:	e8 89       	ldd	r30, Y+16	; 0x10
+ 3ae:	f9 89       	ldd	r31, Y+17	; 0x11
+ 3b0:	80 81       	ld	r24, Z
+
+000003b2 <.Loc.302>:
+ 3b2:	85 ff       	sbrs	r24, 5
+ 3b4:	14 c0       	rjmp	.+40     	; 0x3de <.L84>
+
+000003b6 <.LBB160>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/HardwareSerial.cpp:238
+    // So writing UDR must happen first.
+    // Writing UDR and clearing TC must be done atomically, otherwise
+    // interrupts might delay the TXC clear so the byte written to UDR
+    // is transmitted (setting TXC) before clearing TXC. Then TXC will
+    // be cleared when no bytes are left, causing flush() to hang
+    ATOMIC_BLOCK(ATOMIC_RESTORESTATE) {
+ 3b6:	9f b7       	in	r25, 0x3f	; 63
+
+000003b8 <.LBB161>:
+.Loc.304():
+/usr/lib/avr/include/util/atomic.h:50
+    return 1;
+}
+
+static __inline__ uint8_t __iCliRetVal(void)
+{
+    cli();
+ 3b8:	f8 94       	cli
+
+000003ba <.LBE161>:
+HardwareSerial::write(unsigned char):
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/HardwareSerial.cpp:239
+      *_udr = c;
+ 3ba:	ee 89       	ldd	r30, Y+22	; 0x16
+ 3bc:	ff 89       	ldd	r31, Y+23	; 0x17
+
+000003be <.Loc.311>:
+ 3be:	60 83       	st	Z, r22
+
+000003c0 <.Loc.312>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/HardwareSerial.cpp:243
+      #ifdef MPCM0
+        *_ucsra = ((*_ucsra) & ((1 << U2X0) | (1 << MPCM0))) | (1 << TXC0);
+      #else
+        *_ucsra = ((*_ucsra) & ((1 << U2X0) | (1 << TXC0)));
+ 3c0:	e8 89       	ldd	r30, Y+16	; 0x10
+ 3c2:	f9 89       	ldd	r31, Y+17	; 0x11
+
+000003c4 <.Loc.314>:
+ 3c4:	80 81       	ld	r24, Z
+ 3c6:	82 74       	andi	r24, 0x42	; 66
+
+000003c8 <.L96>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/HardwareSerial.cpp:271
+  // make atomic to prevent execution of ISR between setting the
+  // head pointer and setting the interrupt flag resulting in buffer
+  // retransmission
+  ATOMIC_BLOCK(ATOMIC_RESTORESTATE) {
+    _tx_buffer_head = i;
+    *_ucsrb |= _BV(UDRIE0);
+ 3c8:	80 83       	st	Z, r24
+
+000003ca <.LBB164>:
+.Loc.317():
+/usr/lib/avr/include/util/atomic.h:70
+    (void)__s;
+}
+
+static __inline__ void __iRestore(const  uint8_t *__s)
+{
+    SREG = *__s;
+ 3ca:	9f bf       	out	0x3f, r25	; 63
+
+000003cc <.LBE164>:
+HardwareSerial::write(unsigned char):
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/HardwareSerial.cpp:275
+  }
+  
+  return 1;
+}
+ 3cc:	81 e0       	ldi	r24, 0x01	; 1
+ 3ce:	90 e0       	ldi	r25, 0x00	; 0
+ 3d0:	df 91       	pop	r29
+ 3d2:	cf 91       	pop	r28
+
+000003d4 <.Loc.326>:
+ 3d4:	1f 91       	pop	r17
+ 3d6:	0f 91       	pop	r16
+ 3d8:	ff 90       	pop	r15
+
+000003da <.Loc.327>:
+ 3da:	ef 90       	pop	r14
+ 3dc:	08 95       	ret
+
+000003de <.L84>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/HardwareSerial.cpp:248
+  tx_buffer_index_t i = (_tx_buffer_head + 1) % SERIAL_TX_BUFFER_SIZE;
+ 3de:	0b 8d       	ldd	r16, Y+27	; 0x1b
+
+000003e0 <.Loc.330>:
+ 3e0:	0f 5f       	subi	r16, 0xFF	; 255
+ 3e2:	1f 4f       	sbci	r17, 0xFF	; 255
+
+000003e4 <.Loc.331>:
+ 3e4:	0f 73       	andi	r16, 0x3F	; 63
+
+000003e6 <.Loc.332>:
+ 3e6:	e0 2e       	mov	r14, r16
+
+000003e8 <.L87>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/HardwareSerial.cpp:252 (discriminator 1)
+  while (i == _tx_buffer_tail) {
+ 3e8:	8c 8d       	ldd	r24, Y+28	; 0x1c
+
+000003ea <.Loc.336>:
+ 3ea:	8e 15       	cp	r24, r14
+ 3ec:	79 f0       	breq	.+30     	; 0x40c <.L89>
+
+000003ee <.Loc.337>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/HardwareSerial.cpp:265
+  _tx_buffer[_tx_buffer_head] = c;
+ 3ee:	eb 8d       	ldd	r30, Y+27	; 0x1b
+
+000003f0 <.Loc.339>:
+ 3f0:	ec 0f       	add	r30, r28
+ 3f2:	fd 2f       	mov	r31, r29
+ 3f4:	f1 1d       	adc	r31, r1
+ 3f6:	e3 5a       	subi	r30, 0xA3	; 163
+ 3f8:	ff 4f       	sbci	r31, 0xFF	; 255
+ 3fa:	f0 82       	st	Z, r15
+
+000003fc <.Loc.340>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/HardwareSerial.cpp:269
+  ATOMIC_BLOCK(ATOMIC_RESTORESTATE) {
+ 3fc:	9f b7       	in	r25, 0x3f	; 63
+
+000003fe <.LBB166>:
+.Loc.341():
+/usr/lib/avr/include/util/atomic.h:50
+    cli();
+ 3fe:	f8 94       	cli
+
+00000400 <.LBE166>:
+HardwareSerial::write(unsigned char):
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/HardwareSerial.cpp:270
+    _tx_buffer_head = i;
+ 400:	0b 8f       	std	Y+27, r16	; 0x1b
+
+00000402 <.Loc.348>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/HardwareSerial.cpp:271
+    *_ucsrb |= _BV(UDRIE0);
+ 402:	ea 89       	ldd	r30, Y+18	; 0x12
+ 404:	fb 89       	ldd	r31, Y+19	; 0x13
+
+00000406 <.Loc.350>:
+ 406:	80 81       	ld	r24, Z
+
+00000408 <.Loc.351>:
+ 408:	80 62       	ori	r24, 0x20	; 32
+ 40a:	de cf       	rjmp	.-68     	; 0x3c8 <.L96>
+
+0000040c <.L89>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/HardwareSerial.cpp:253
+    if (bit_is_clear(SREG, SREG_I)) {
+ 40c:	0f b6       	in	r0, 0x3f	; 63
+ 40e:	07 fc       	sbrc	r0, 7
+ 410:	eb cf       	rjmp	.-42     	; 0x3e8 <.L87>
+
+00000412 <.Loc.354>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/HardwareSerial.cpp:258
+      if(bit_is_set(*_ucsra, UDRE0))
+ 412:	e8 89       	ldd	r30, Y+16	; 0x10
+ 414:	f9 89       	ldd	r31, Y+17	; 0x11
+ 416:	80 81       	ld	r24, Z
+
+00000418 <.Loc.356>:
+ 418:	85 ff       	sbrs	r24, 5
+ 41a:	e6 cf       	rjmp	.-52     	; 0x3e8 <.L87>
+
+0000041c <.Loc.357>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/HardwareSerial.cpp:259
+        _tx_udr_empty_irq();
+ 41c:	ce 01       	movw	r24, r28
+ 41e:	2c df       	rcall	.-424    	; 0x278 <HardwareSerial::_tx_udr_empty_irq()>
+
+00000420 <.LVL124>:
+ 420:	e3 cf       	rjmp	.-58     	; 0x3e8 <.L87>
+
+00000422 <Print::write(unsigned char const*, unsigned int)>:
+Print::write(unsigned char const*, unsigned int):
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/Print.cpp:35
+
+// Public Methods //////////////////////////////////////////////////////////////
+
+/* default implementation: may be overridden */
+size_t Print::write(const uint8_t *buffer, size_t size)
+{
+ 422:	cf 92       	push	r12
+ 424:	df 92       	push	r13
+ 426:	ef 92       	push	r14
+ 428:	ff 92       	push	r15
+ 42a:	0f 93       	push	r16
+ 42c:	1f 93       	push	r17
+ 42e:	cf 93       	push	r28
+ 430:	df 93       	push	r29
+ 432:	7c 01       	movw	r14, r24
+ 434:	6a 01       	movw	r12, r20
+
+00000436 <.LVL126>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/Print.cpp:37
+  size_t n = 0;
+  while (size--) {
+ 436:	eb 01       	movw	r28, r22
+
+00000438 <.Loc.363>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/Print.cpp:36
+  size_t n = 0;
+ 438:	00 e0       	ldi	r16, 0x00	; 0
+ 43a:	10 e0       	ldi	r17, 0x00	; 0
+
+0000043c <.L98>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/Print.cpp:37 (discriminator 1)
+  while (size--) {
+ 43c:	0c 15       	cp	r16, r12
+ 43e:	1d 05       	cpc	r17, r13
+ 440:	51 f4       	brne	.+20     	; 0x456 <.L100>
+
+00000442 <.L97>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/Print.cpp:42
+    if (write(*buffer++)) n++;
+    else break;
+  }
+  return n;
+}
+ 442:	c8 01       	movw	r24, r16
+ 444:	df 91       	pop	r29
+ 446:	cf 91       	pop	r28
+ 448:	1f 91       	pop	r17
+ 44a:	0f 91       	pop	r16
+
+0000044c <.Loc.367>:
+ 44c:	ff 90       	pop	r15
+ 44e:	ef 90       	pop	r14
+
+00000450 <.Loc.368>:
+ 450:	df 90       	pop	r13
+ 452:	cf 90       	pop	r12
+
+00000454 <.Loc.369>:
+ 454:	08 95       	ret
+
+00000456 <.L100>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/Print.cpp:38
+    if (write(*buffer++)) n++;
+ 456:	f7 01       	movw	r30, r14
+ 458:	01 90       	ld	r0, Z+
+ 45a:	f0 81       	ld	r31, Z
+ 45c:	e0 2d       	mov	r30, r0
+ 45e:	01 90       	ld	r0, Z+
+ 460:	f0 81       	ld	r31, Z
+ 462:	e0 2d       	mov	r30, r0
+ 464:	68 81       	ld	r22, Y
+ 466:	c7 01       	movw	r24, r14
+ 468:	09 95       	icall
+
+0000046a <.LVL133>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/Print.cpp:38 (discriminator 1)
+ 46a:	89 2b       	or	r24, r25
+ 46c:	51 f3       	breq	.-44     	; 0x442 <.L97>
+ 46e:	21 96       	adiw	r28, 0x01	; 1
+
+00000470 <.Loc.373>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/Print.cpp:38 (discriminator 2)
+ 470:	0f 5f       	subi	r16, 0xFF	; 255
+ 472:	1f 4f       	sbci	r17, 0xFF	; 255
+
+00000474 <.Loc.375>:
+ 474:	e3 cf       	rjmp	.-58     	; 0x43c <.L98>
+
+00000476 <SPIFlash::_endSPI() [clone .constprop.0]>:
+SPIFlash::_endSPI():
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:309
+   CHIP_DESELECT
+ 476:	61 e0       	ldi	r22, 0x01	; 1
+ 478:	80 91 9b 02 	lds	r24, 0x029B	; 0x80029b <flash+0x5>
+ 47c:	7e de       	rcall	.-772    	; 0x17a <digitalWrite>
+
+0000047e <.LVL136>:
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:311
+   if (address4ByteEnabled) {          // If the previous operation enabled 4-byte addressing, disable it
+ 47e:	80 91 a6 02 	lds	r24, 0x02A6	; 0x8002a6 <flash+0x10>
+ 482:	80 30       	cpi	r24, 0x00	; 0
+ 484:	79 f0       	breq	.+30     	; 0x4a4 <.L104>
+
+00000486 <.LBB186>:
+SPIFlash::_disable4ByteAddressing():
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:376
+   }
+ }
+
+ // Checks to see if 4-byte addressing is already disabled and if not, disables it
+ bool SPIFlash::_disable4ByteAddressing(void) {
+   if (!(_readStat3() & ADS)) {      // If 4 byte addressing is disabled (default state)
+ 486:	e8 de       	rcall	.-560    	; 0x258 <SPIFlash::_readStat3() [clone .constprop.0]>
+
+00000488 <.LVL138>:
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:376 (discriminator 1)
+ 488:	80 ff       	sbrs	r24, 0
+ 48a:	0c c0       	rjmp	.+24     	; 0x4a4 <.L104>
+
+0000048c <.Loc.381>:
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:379
+     return true;
+   }
+   _beginSPI(ADDR4BYTE_DIS);
+ 48c:	89 ee       	ldi	r24, 0xE9	; 233
+ 48e:	ab de       	rcall	.-682    	; 0x1e6 <SPIFlash::_beginSPI(unsigned char) [clone .constprop.0] [clone .isra.0]>
+
+00000490 <.LVL139>:
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:380
+   CHIP_DESELECT
+ 490:	61 e0       	ldi	r22, 0x01	; 1
+ 492:	80 91 9b 02 	lds	r24, 0x029B	; 0x80029b <flash+0x5>
+ 496:	71 de       	rcall	.-798    	; 0x17a <digitalWrite>
+
+00000498 <.LVL140>:
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:381
+   if (_readStat3() & ADS) {
+ 498:	df de       	rcall	.-578    	; 0x258 <SPIFlash::_readStat3() [clone .constprop.0]>
+
+0000049a <.LVL141>:
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:381 (discriminator 1)
+ 49a:	80 ff       	sbrs	r24, 0
+ 49c:	0c c0       	rjmp	.+24     	; 0x4b6 <.L105>
+
+0000049e <.LBB188>:
+Diagnostics::troubleshoot(unsigned char, bool):
+/home/user/Arduino/libraries/SPIMemory/src/diagnostics.cpp:44
+  Serial.println(F("please raise an issue at http://www.github.com/Marzogh/SPIMemory/issues with the details of what your were doing when this error occurred"));
+}
+//Troubleshooting function. Called when #ifdef RUNDIAGNOSTIC is uncommented at the top of SPIMemory.h.
+void Diagnostics::troubleshoot(uint8_t _code, bool printoverride) {
+  bool _printoverride;
+  errorcode = _code;
+ 49e:	8e e0       	ldi	r24, 0x0E	; 14
+ 4a0:	80 93 95 02 	sts	0x0295, r24	; 0x800295 <diagnostics>
+
+000004a4 <.L104>:
+SPIFlash::_endSPI():
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:325
+   SPCR = _SPCR;
+ 4a4:	80 91 ad 02 	lds	r24, 0x02AD	; 0x8002ad <flash+0x17>
+
+000004a8 <.Loc.388>:
+ 4a8:	8d b9       	out	0x0d, r24	; 13
+
+000004aa <.Loc.389>:
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:326
+   SPSR = _SPSR;
+ 4aa:	80 91 ae 02 	lds	r24, 0x02AE	; 0x8002ae <flash+0x18>
+
+000004ae <.Loc.390>:
+ 4ae:	8e b9       	out	0x0e, r24	; 14
+
+000004b0 <.Loc.391>:
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:328
+   SPIBusState = false;
+ 4b0:	10 92 a4 02 	sts	0x02A4, r1	; 0x8002a4 <flash+0xe>
+
+000004b4 <.Loc.392>:
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:329
+ }
+ 4b4:	08 95       	ret
+
+000004b6 <.L105>:
+SPIFlash::_disable4ByteAddressing():
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:385
+     _troubleshoot(UNABLETO3BYTE);
+     return false;
+   }
+   address4ByteEnabled = false;
+ 4b6:	10 92 a6 02 	sts	0x02A6, r1	; 0x8002a6 <flash+0x10>
+
+000004ba <.Loc.394>:
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:386
+   return true;
+ 4ba:	f4 cf       	rjmp	.-24     	; 0x4a4 <.L104>
+
+000004bc <SPIFlash::_notBusy(unsigned long) [clone .constprop.0]>:
+SPIFlash::_notBusy(unsigned long):
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:422
+     return false;
+   }
+ }
+
+ // Polls the status register 1 until busy flag is cleared or timeout
+ bool SPIFlash::_notBusy(uint32_t timeout) {
+ 4bc:	cf 92       	push	r12
+ 4be:	df 92       	push	r13
+ 4c0:	ef 92       	push	r14
+ 4c2:	ff 92       	push	r15
+
+000004c4 <.LBB204>:
+.Loc.396():
+/usr/lib/avr/include/util/delay.h:257
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(__builtin_ceil(__builtin_fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 4c4:	8a e0       	ldi	r24, 0x0A	; 10
+
+000004c6 <.L1^B2>:
+ 4c6:	8a 95       	dec	r24
+ 4c8:	f1 f7       	brne	.-4      	; 0x4c6 <.L1^B2>
+ 4ca:	00 c0       	rjmp	.+0      	; 0x4cc <L0^A>
+
+000004cc <L0^A>:
+SPIFlash::_notBusy(unsigned long):
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:424
+   _delay_us(WINBOND_WRITE_DELAY);
+   uint32_t _time = micros();
+ 4cc:	16 de       	rcall	.-980    	; 0xfa <micros>
+
+000004ce <.LVL147>:
+ 4ce:	6b 01       	movw	r12, r22
+ 4d0:	7c 01       	movw	r14, r24
+
+000004d2 <.L115>:
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:427
+
+   do {
+     _readStat1();
+ 4d2:	b2 de       	rcall	.-668    	; 0x238 <SPIFlash::_readStat1() [clone .constprop.0]>
+
+000004d4 <.LVL149>:
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:428
+     if (!(stat1 & BUSY))
+ 4d4:	80 91 aa 02 	lds	r24, 0x02AA	; 0x8002aa <flash+0x14>
+ 4d8:	80 fd       	sbrc	r24, 0
+ 4da:	06 c0       	rjmp	.+12     	; 0x4e8 <.L113>
+
+000004dc <.L116>:
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:430
+     {
+       return true;
+ 4dc:	81 e0       	ldi	r24, 0x01	; 1
+
+000004de <.L112>:
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:439
+   if (timeout <= (micros() - _time)) {
+     _troubleshoot(CHIPBUSY);
+     return false;
+   }
+   return true;
+ }
+ 4de:	ff 90       	pop	r15
+ 4e0:	ef 90       	pop	r14
+ 4e2:	df 90       	pop	r13
+ 4e4:	cf 90       	pop	r12
+
+000004e6 <.Loc.403>:
+ 4e6:	08 95       	ret
+
+000004e8 <.L113>:
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:433
+   } while ((micros() - _time) < timeout);
+ 4e8:	08 de       	rcall	.-1008   	; 0xfa <micros>
+
+000004ea <.LVL152>:
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:433 (discriminator 1)
+ 4ea:	dc 01       	movw	r26, r24
+ 4ec:	cb 01       	movw	r24, r22
+ 4ee:	8c 19       	sub	r24, r12
+ 4f0:	9d 09       	sbc	r25, r13
+ 4f2:	ae 09       	sbc	r26, r14
+ 4f4:	bf 09       	sbc	r27, r15
+
+000004f6 <.Loc.406>:
+ 4f6:	9a 3c       	cpi	r25, 0xCA	; 202
+ 4f8:	aa 49       	sbci	r26, 0x9A	; 154
+ 4fa:	bb 43       	sbci	r27, 0x3B	; 59
+ 4fc:	50 f3       	brcs	.-44     	; 0x4d2 <.L115>
+
+000004fe <.Loc.407>:
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:434
+   if (timeout <= (micros() - _time)) {
+ 4fe:	fd dd       	rcall	.-1030   	; 0xfa <micros>
+
+00000500 <.LVL153>:
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:434 (discriminator 1)
+ 500:	dc 01       	movw	r26, r24
+ 502:	cb 01       	movw	r24, r22
+ 504:	8c 19       	sub	r24, r12
+ 506:	9d 09       	sbc	r25, r13
+ 508:	ae 09       	sbc	r26, r14
+ 50a:	bf 09       	sbc	r27, r15
+
+0000050c <.Loc.409>:
+ 50c:	9a 3c       	cpi	r25, 0xCA	; 202
+ 50e:	aa 49       	sbci	r26, 0x9A	; 154
+ 510:	bb 43       	sbci	r27, 0x3B	; 59
+ 512:	20 f3       	brcs	.-56     	; 0x4dc <.L116>
+
+00000514 <.LBB206>:
+Diagnostics::troubleshoot(unsigned char, bool):
+/home/user/Arduino/libraries/SPIMemory/src/diagnostics.cpp:44
+ 514:	84 e0       	ldi	r24, 0x04	; 4
+ 516:	80 93 95 02 	sts	0x0295, r24	; 0x800295 <diagnostics>
+
+0000051a <.LBE206>:
+SPIFlash::_notBusy(unsigned long):
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:436
+     return false;
+ 51a:	80 e0       	ldi	r24, 0x00	; 0
+ 51c:	e0 cf       	rjmp	.-64     	; 0x4de <.L112>
+
+0000051e <Print::write(char const*) [clone .constprop.0] [clone .isra.0]>:
+Print::write(char const*):
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/Print.h:53
+    int getWriteError() { return write_error; }
+    void clearWriteError() { setWriteError(0); }
+
+    virtual size_t write(uint8_t) = 0;
+    size_t write(const char *str) {
+      if (str == NULL) return 0;
+ 51e:	00 97       	sbiw	r24, 0x00	; 0
+ 520:	61 f0       	breq	.+24     	; 0x53a <.L120>
+
+00000522 <.Loc.415>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/Print.h:54
+      return write((const uint8_t *)str, strlen(str));
+ 522:	fc 01       	movw	r30, r24
+
+00000524 <.L0^B1>:
+ 524:	01 90       	ld	r0, Z+
+ 526:	00 20       	and	r0, r0
+ 528:	e9 f7       	brne	.-6      	; 0x524 <.L0^B1>
+ 52a:	31 97       	sbiw	r30, 0x01	; 1
+ 52c:	af 01       	movw	r20, r30
+ 52e:	48 1b       	sub	r20, r24
+ 530:	59 0b       	sbc	r21, r25
+
+00000532 <.Loc.416>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/Print.h:54 (discriminator 1)
+ 532:	bc 01       	movw	r22, r24
+ 534:	8f ee       	ldi	r24, 0xEF	; 239
+ 536:	91 e0       	ldi	r25, 0x01	; 1
+
+00000538 <.Loc.417>:
+ 538:	74 cf       	rjmp	.-280    	; 0x422 <Print::write(unsigned char const*, unsigned int)>
+
+0000053a <.L120>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/Print.h:55
+    }
+ 53a:	08 95       	ret
+
+0000053c <__vector_9>:
+__vector_9():
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/wiring.c:159
+{
+ 53c:	1f 92       	push	r1
+ 53e:	1f b6       	in	r1, 0x3f	; 63
+ 540:	1f 92       	push	r1
+ 542:	11 24       	eor	r1, r1
+ 544:	2f 93       	push	r18
+ 546:	3f 93       	push	r19
+ 548:	8f 93       	push	r24
+ 54a:	9f 93       	push	r25
+ 54c:	af 93       	push	r26
+ 54e:	bf 93       	push	r27
+
+00000550 <.Loc.420>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/wiring.c:167
+  unsigned long m = timer0_millis;
+ 550:	80 91 91 02 	lds	r24, 0x0291	; 0x800291 <timer0_millis>
+ 554:	90 91 92 02 	lds	r25, 0x0292	; 0x800292 <timer0_millis+0x1>
+ 558:	a0 91 93 02 	lds	r26, 0x0293	; 0x800293 <timer0_millis+0x2>
+ 55c:	b0 91 94 02 	lds	r27, 0x0294	; 0x800294 <timer0_millis+0x3>
+
+00000560 <.LVL159>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/wiring.c:168
+  unsigned char f = timer0_fract;
+ 560:	30 91 90 02 	lds	r19, 0x0290	; 0x800290 <timer0_fract>
+
+00000564 <.LVL160>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/wiring.c:170
+  f += FRACT_INC FRACT_INC_PLUS;
+ 564:	23 2f       	mov	r18, r19
+ 566:	2d 5f       	subi	r18, 0xFD	; 253
+
+00000568 <.Loc.426>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/wiring.c:200
+  if (f >= FRACT_MAX) {
+ 568:	2d 37       	cpi	r18, 0x7D	; 125
+ 56a:	58 f1       	brcs	.+86     	; 0x5c2 <.L123>
+
+0000056c <.Loc.428>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/wiring.c:201
+    f -= FRACT_MAX;
+ 56c:	2d 57       	subi	r18, 0x7D	; 125
+
+0000056e <.Loc.430>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/wiring.c:202
+    m += MILLIS_INC + 1;
+ 56e:	02 96       	adiw	r24, 0x02	; 2
+ 570:	a1 1d       	adc	r26, r1
+ 572:	b1 1d       	adc	r27, r1
+
+00000574 <.L124>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/wiring.c:208
+  timer0_fract = f;
+ 574:	20 93 90 02 	sts	0x0290, r18	; 0x800290 <timer0_fract>
+
+00000578 <.Loc.434>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/wiring.c:209
+  timer0_millis = m;
+ 578:	80 93 91 02 	sts	0x0291, r24	; 0x800291 <timer0_millis>
+ 57c:	90 93 92 02 	sts	0x0292, r25	; 0x800292 <timer0_millis+0x1>
+ 580:	a0 93 93 02 	sts	0x0293, r26	; 0x800293 <timer0_millis+0x2>
+ 584:	b0 93 94 02 	sts	0x0294, r27	; 0x800294 <timer0_millis+0x3>
+
+00000588 <.Loc.436>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/wiring.c:211
+  timer0_overflow_count++;
+ 588:	80 91 8c 02 	lds	r24, 0x028C	; 0x80028c <timer0_overflow_count>
+ 58c:	90 91 8d 02 	lds	r25, 0x028D	; 0x80028d <timer0_overflow_count+0x1>
+ 590:	a0 91 8e 02 	lds	r26, 0x028E	; 0x80028e <timer0_overflow_count+0x2>
+ 594:	b0 91 8f 02 	lds	r27, 0x028F	; 0x80028f <timer0_overflow_count+0x3>
+
+00000598 <.Loc.438>:
+ 598:	01 96       	adiw	r24, 0x01	; 1
+ 59a:	a1 1d       	adc	r26, r1
+ 59c:	b1 1d       	adc	r27, r1
+ 59e:	80 93 8c 02 	sts	0x028C, r24	; 0x80028c <timer0_overflow_count>
+ 5a2:	90 93 8d 02 	sts	0x028D, r25	; 0x80028d <timer0_overflow_count+0x1>
+ 5a6:	a0 93 8e 02 	sts	0x028E, r26	; 0x80028e <timer0_overflow_count+0x2>
+ 5aa:	b0 93 8f 02 	sts	0x028F, r27	; 0x80028f <timer0_overflow_count+0x3>
+
+000005ae <.Loc.439>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/wiring.c:213
+}
+ 5ae:	bf 91       	pop	r27
+ 5b0:	af 91       	pop	r26
+ 5b2:	9f 91       	pop	r25
+ 5b4:	8f 91       	pop	r24
+ 5b6:	3f 91       	pop	r19
+ 5b8:	2f 91       	pop	r18
+ 5ba:	1f 90       	pop	r1
+ 5bc:	1f be       	out	0x3f, r1	; 63
+ 5be:	1f 90       	pop	r1
+ 5c0:	18 95       	reti
+
+000005c2 <.L123>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/wiring.c:205
+    m += MILLIS_INC;
+ 5c2:	01 96       	adiw	r24, 0x01	; 1
+ 5c4:	a1 1d       	adc	r26, r1
+ 5c6:	b1 1d       	adc	r27, r1
+
+000005c8 <.Loc.442>:
+ 5c8:	d5 cf       	rjmp	.-86     	; 0x574 <.L124>
+
+000005ca <__vector_11>:
+__vector_11():
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/HardwareSerial0.cpp:50
+  {
+ 5ca:	2f 93       	push	r18
+ 5cc:	2f b7       	in	r18, 0x3f	; 63
+ 5ce:	2f 93       	push	r18
+ 5d0:	8f 93       	push	r24
+ 5d2:	9f 93       	push	r25
+ 5d4:	ef 93       	push	r30
+ 5d6:	ff 93       	push	r31
+
+000005d8 <.LBB219>:
+HardwareSerial::_rx_complete_irq():
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/HardwareSerial_private.h:100
+
+// Actual interrupt handlers //////////////////////////////////////////////////////////////
+
+void HardwareSerial::_rx_complete_irq(void)
+{
+  if (bit_is_clear(*_ucsra, UPE0)) {
+ 5d8:	e0 91 ff 01 	lds	r30, 0x01FF	; 0x8001ff <Serial+0x10>
+ 5dc:	f0 91 00 02 	lds	r31, 0x0200	; 0x800200 <Serial+0x11>
+ 5e0:	80 81       	ld	r24, Z
+
+000005e2 <.LBB221>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/HardwareSerial_private.h:103
+    // No Parity error, read byte and store it in the buffer if there is
+    // room
+    unsigned char c = *_udr;
+ 5e2:	e0 91 05 02 	lds	r30, 0x0205	; 0x800205 <Serial+0x16>
+ 5e6:	f0 91 06 02 	lds	r31, 0x0206	; 0x800206 <Serial+0x17>
+
+000005ea <.Loc.448>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/HardwareSerial_private.h:100
+  if (bit_is_clear(*_ucsra, UPE0)) {
+ 5ea:	82 fd       	sbrc	r24, 2
+ 5ec:	19 c0       	rjmp	.+50     	; 0x620 <.L126>
+
+000005ee <.LBI221>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/HardwareSerial_private.h:103
+    unsigned char c = *_udr;
+ 5ee:	90 81       	ld	r25, Z
+
+000005f0 <.LVL170>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/HardwareSerial_private.h:104
+    rx_buffer_index_t i = (unsigned int)(_rx_buffer_head + 1) % SERIAL_RX_BUFFER_SIZE;
+ 5f0:	80 91 08 02 	lds	r24, 0x0208	; 0x800208 <Serial+0x19>
+
+000005f4 <.Loc.452>:
+ 5f4:	8f 5f       	subi	r24, 0xFF	; 255
+
+000005f6 <.Loc.453>:
+ 5f6:	8f 73       	andi	r24, 0x3F	; 63
+
+000005f8 <.LVL171>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/HardwareSerial_private.h:110
+
+    // if we should be storing the received character into the location
+    // just before the tail (meaning that the head would advance to the
+    // current location of the tail), we're about to overflow the buffer
+    // and so we don't write the character or advance the head.
+    if (i != _rx_buffer_tail) {
+ 5f8:	20 91 09 02 	lds	r18, 0x0209	; 0x800209 <Serial+0x1a>
+
+000005fc <.Loc.455>:
+ 5fc:	82 17       	cp	r24, r18
+ 5fe:	41 f0       	breq	.+16     	; 0x610 <.L125>
+
+00000600 <.Loc.456>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/HardwareSerial_private.h:111
+      _rx_buffer[_rx_buffer_head] = c;
+ 600:	e0 91 08 02 	lds	r30, 0x0208	; 0x800208 <Serial+0x19>
+ 604:	f0 e0       	ldi	r31, 0x00	; 0
+
+00000606 <.Loc.457>:
+ 606:	e1 51       	subi	r30, 0x11	; 17
+ 608:	fe 4f       	sbci	r31, 0xFE	; 254
+ 60a:	95 8f       	std	Z+29, r25	; 0x1d
+
+0000060c <.Loc.458>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/HardwareSerial_private.h:112
+      _rx_buffer_head = i;
+ 60c:	80 93 08 02 	sts	0x0208, r24	; 0x800208 <Serial+0x19>
+
+00000610 <.L125>:
+__vector_11():
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/HardwareSerial0.cpp:52
+  }
+ 610:	ff 91       	pop	r31
+ 612:	ef 91       	pop	r30
+ 614:	9f 91       	pop	r25
+ 616:	8f 91       	pop	r24
+ 618:	2f 91       	pop	r18
+ 61a:	2f bf       	out	0x3f, r18	; 63
+ 61c:	2f 91       	pop	r18
+ 61e:	18 95       	reti
+
+00000620 <.L126>:
+HardwareSerial::_rx_complete_irq():
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/HardwareSerial_private.h:116
+    }
+  } else {
+    // Parity error, read byte but discard it
+    *_udr;
+ 620:	80 81       	ld	r24, Z
+
+00000622 <.Loc.462>:
+__vector_11():
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/HardwareSerial0.cpp:52
+ 622:	f6 cf       	rjmp	.-20     	; 0x610 <.L125>
+
+00000624 <__vector_12>:
+__vector_12():
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/HardwareSerial0.cpp:63
+{
+ 624:	1f 92       	push	r1
+ 626:	0f 92       	push	r0
+ 628:	0f b6       	in	r0, 0x3f	; 63
+ 62a:	0f 92       	push	r0
+ 62c:	11 24       	eor	r1, r1
+ 62e:	2f 93       	push	r18
+ 630:	3f 93       	push	r19
+ 632:	4f 93       	push	r20
+ 634:	5f 93       	push	r21
+ 636:	6f 93       	push	r22
+ 638:	7f 93       	push	r23
+ 63a:	8f 93       	push	r24
+ 63c:	9f 93       	push	r25
+ 63e:	af 93       	push	r26
+ 640:	bf 93       	push	r27
+ 642:	ef 93       	push	r30
+ 644:	ff 93       	push	r31
+
+00000646 <.Loc.465>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/HardwareSerial0.cpp:64
+  Serial._tx_udr_empty_irq();
+ 646:	8f ee       	ldi	r24, 0xEF	; 239
+ 648:	91 e0       	ldi	r25, 0x01	; 1
+ 64a:	16 de       	rcall	.-980    	; 0x278 <HardwareSerial::_tx_udr_empty_irq()>
+
+0000064c <.LVL175>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/HardwareSerial0.cpp:65
+}
+ 64c:	ff 91       	pop	r31
+ 64e:	ef 91       	pop	r30
+ 650:	bf 91       	pop	r27
+ 652:	af 91       	pop	r26
+ 654:	9f 91       	pop	r25
+ 656:	8f 91       	pop	r24
+ 658:	7f 91       	pop	r23
+ 65a:	6f 91       	pop	r22
+ 65c:	5f 91       	pop	r21
+ 65e:	4f 91       	pop	r20
+ 660:	3f 91       	pop	r19
+ 662:	2f 91       	pop	r18
+ 664:	0f 90       	pop	r0
+ 666:	0f be       	out	0x3f, r0	; 63
+ 668:	0f 90       	pop	r0
+ 66a:	1f 90       	pop	r1
+ 66c:	18 95       	reti
+
+0000066e <main>:
+init():
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/wiring.c:945
+
+void init()
+{
+  // this needs to be called before setup() or some functions won't
+  // work there
+  sei();
+ 66e:	78 94       	sei
+
+00000670 <.Loc.472>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/wiring.c:966
+#if defined(__AVR_ATmega64__) || defined(__AVR_ATmega128__)
+  // CPU specific: different values for the ATmega64/128
+  TCCR0 |= _BV(WGM01) | _BV(WGM00) | _BV(CS02);
+#elif defined(TCCR0) && defined(CS01) && defined(CS00)
+  // This combination is for the ATmega8535, ATmega8, ATmega16, ATmega32, ATmega8515, ATmega162
+  TCCR0 |= _BV(CS01) | _BV(CS00);
+ 670:	83 b7       	in	r24, 0x33	; 51
+
+00000672 <.Loc.473>:
+ 672:	83 60       	ori	r24, 0x03	; 3
+ 674:	83 bf       	out	0x33, r24	; 51
+
+00000676 <.Loc.474>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/wiring.c:982
+  #error Timer 0 prescale factor 64 not set correctly
+#endif
+
+// Enable timer 0 overflow interrupt
+#if defined(TIMSK) && defined(TOIE0)
+  TIMSK |= _BV(TOIE0);
+ 676:	89 b7       	in	r24, 0x39	; 57
+
+00000678 <.Loc.475>:
+ 678:	81 60       	ori	r24, 0x01	; 1
+ 67a:	89 bf       	out	0x39, r24	; 57
+
+0000067c <.Loc.476>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/wiring.c:995
+// this is better for motors as it ensures an even waveform
+// note, however, that fast pwm mode can achieve a frequency of up
+// 8 MHz (with a 16 MHz clock) at 50% duty cycle
+
+#if defined(TCCR1B) && defined(CS11) && defined(CS10)
+  TCCR1B = _BV(CS11); // Set timer 1 prescale factor to 64
+ 67c:	42 e0       	ldi	r20, 0x02	; 2
+ 67e:	f4 2e       	mov	r15, r20
+ 680:	fe bc       	out	0x2e, r15	; 46
+
+00000682 <.Loc.478>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/wiring.c:997
+#if F_CPU >= 8000000L
+  TCCR1B |= _BV(CS10);
+ 682:	8e b5       	in	r24, 0x2e	; 46
+
+00000684 <.Loc.479>:
+ 684:	81 60       	ori	r24, 0x01	; 1
+ 686:	8e bd       	out	0x2e, r24	; 46
+
+00000688 <.Loc.480>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/wiring.c:1006
+#if F_CPU >= 8000000L
+  TCCR1 |= _BV(CS10);
+#endif
+#endif
+#if defined(TCCR1A) && defined(WGM10)
+  TCCR1A |= _BV(WGM10); // Put timer 1 in 8-bit phase correct pwm mode
+ 688:	8f b5       	in	r24, 0x2f	; 47
+
+0000068a <.Loc.481>:
+ 68a:	81 60       	ori	r24, 0x01	; 1
+ 68c:	8f bd       	out	0x2f, r24	; 47
+
+0000068e <.Loc.482>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/wiring.c:1011
+#endif
+
+// Set timer 2 prescale factor to 64
+#if defined(TCCR2) && defined(CS22)
+  TCCR2 |= _BV(CS22);
+ 68e:	85 b5       	in	r24, 0x25	; 37
+
+00000690 <.Loc.483>:
+ 690:	84 60       	ori	r24, 0x04	; 4
+ 692:	85 bd       	out	0x25, r24	; 37
+
+00000694 <.Loc.484>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/wiring.c:1020
+  TCCR2A |= _BV(CS22);
+#endif
+
+// Configure timer 2 for phase correct pwm (8-bit)
+#if defined(TCCR2) && defined(WGM20)
+  TCCR2 |= _BV(WGM20);
+ 694:	85 b5       	in	r24, 0x25	; 37
+
+00000696 <.Loc.485>:
+ 696:	80 64       	ori	r24, 0x40	; 64
+ 698:	85 bd       	out	0x25, r24	; 37
+
+0000069a <.Loc.486>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/wiring.c:1050
+#endif
+
+#if defined(ADCSRA)
+  // set a2d prescaler so we are inside the desired 50-200 KHz range.
+  #if F_CPU >= 16000000 // 16 MHz / 128 = 125 KHz
+    ADCSRA = _BV(ADPS2) | _BV(ADPS1) | _BV(ADPS0) | _BV(ADEN);
+ 69a:	87 e8       	ldi	r24, 0x87	; 135
+ 69c:	86 b9       	out	0x06, r24	; 6
+
+0000069e <.Loc.488>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/wiring.c:1068
+
+  // The bootloader connects pins 0 and 1 to the USART; disconnect them
+  // here so they can be used as normal digital i/o; they will be
+  // reconnected in Serial.begin()
+#if defined(UCSRB)
+  UCSRB = 0;
+ 69e:	1a b8       	out	0x0a, r1	; 10
+
+000006a0 <.LBB412>:
+.Loc.490():
+/home/user/Desktop/Project/programmer/read/read.ino:13
+const uint16_t CHUNK      = 256;
+
+uint8_t buf[CHUNK];
+
+void setup() {
+  pinMode(9, OUTPUT);
+ 6a0:	89 e0       	ldi	r24, 0x09	; 9
+ 6a2:	4c dd       	rcall	.-1384   	; 0x13c <pinMode.constprop.0>
+
+000006a4 <.LVL176>:
+/home/user/Desktop/Project/programmer/read/read.ino:14
+  digitalWrite(9, HIGH);
+ 6a4:	61 e0       	ldi	r22, 0x01	; 1
+ 6a6:	89 e0       	ldi	r24, 0x09	; 9
+ 6a8:	68 dd       	rcall	.-1328   	; 0x17a <digitalWrite>
+
+000006aa <.LBB414>:
+HardwareSerial::begin(unsigned long, unsigned char):
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/HardwareSerial.cpp:121
+  *_ucsra = 1 << U2X0;
+ 6aa:	e0 91 ff 01 	lds	r30, 0x01FF	; 0x8001ff <Serial+0x10>
+ 6ae:	f0 91 00 02 	lds	r31, 0x0200	; 0x800200 <Serial+0x11>
+
+000006b2 <.Loc.501>:
+ 6b2:	f0 82       	st	Z, r15
+
+000006b4 <.Loc.502>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/HardwareSerial.cpp:135
+  *_ubrrh = baud_setting >> 8;
+ 6b4:	e0 91 fb 01 	lds	r30, 0x01FB	; 0x8001fb <Serial+0xc>
+ 6b8:	f0 91 fc 01 	lds	r31, 0x01FC	; 0x8001fc <Serial+0xd>
+
+000006bc <.Loc.503>:
+ 6bc:	10 82       	st	Z, r1
+
+000006be <.Loc.504>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/HardwareSerial.cpp:136
+  *_ubrrl = baud_setting;
+ 6be:	e0 91 fd 01 	lds	r30, 0x01FD	; 0x8001fd <Serial+0xe>
+ 6c2:	f0 91 fe 01 	lds	r31, 0x01FE	; 0x8001fe <Serial+0xf>
+
+000006c6 <.Loc.505>:
+ 6c6:	80 e1       	ldi	r24, 0x10	; 16
+ 6c8:	80 83       	st	Z, r24
+
+000006ca <.Loc.506>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/HardwareSerial.cpp:138
+  _written = false;
+ 6ca:	10 92 07 02 	sts	0x0207, r1	; 0x800207 <Serial+0x18>
+
+000006ce <.Loc.507>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/HardwareSerial.cpp:146
+  *_ucsrc = config;
+ 6ce:	e0 91 03 02 	lds	r30, 0x0203	; 0x800203 <Serial+0x14>
+ 6d2:	f0 91 04 02 	lds	r31, 0x0204	; 0x800204 <Serial+0x15>
+
+000006d6 <.Loc.508>:
+ 6d6:	86 e8       	ldi	r24, 0x86	; 134
+ 6d8:	80 83       	st	Z, r24
+
+000006da <.Loc.509>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/HardwareSerial.cpp:148
+  *_ucsrb |= _BV(RXEN0) | _BV(TXEN0) | _BV(RXCIE0);
+ 6da:	e0 91 01 02 	lds	r30, 0x0201	; 0x800201 <Serial+0x12>
+ 6de:	f0 91 02 02 	lds	r31, 0x0202	; 0x800202 <Serial+0x13>
+
+000006e2 <.Loc.510>:
+ 6e2:	80 81       	ld	r24, Z
+
+000006e4 <.Loc.511>:
+ 6e4:	88 69       	ori	r24, 0x98	; 152
+ 6e6:	80 83       	st	Z, r24
+
+000006e8 <.Loc.512>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/HardwareSerial.cpp:149
+  *_ucsrb &= ~_BV(UDRIE0);
+ 6e8:	e0 91 01 02 	lds	r30, 0x0201	; 0x800201 <Serial+0x12>
+ 6ec:	f0 91 02 02 	lds	r31, 0x0202	; 0x800202 <Serial+0x13>
+
+000006f0 <.Loc.513>:
+ 6f0:	80 81       	ld	r24, Z
+ 6f2:	8f 7d       	andi	r24, 0xDF	; 223
+ 6f4:	80 83       	st	Z, r24
+
+000006f6 <.LBB417>:
+delay():
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/wiring.c:397
+  unsigned long start = micros();
+ 6f6:	01 dd       	rcall	.-1534   	; 0xfa <micros>
+
+000006f8 <.LVL180>:
+ 6f8:	b6 2f       	mov	r27, r22
+ 6fa:	a7 2f       	mov	r26, r23
+
+000006fc <.LVL181>:
+ 6fc:	e0 e0       	ldi	r30, 0x00	; 0
+ 6fe:	f8 ec       	ldi	r31, 0xC8	; 200
+ 700:	20 e0       	ldi	r18, 0x00	; 0
+ 702:	30 e0       	ldi	r19, 0x00	; 0
+
+00000704 <.L130>:
+.Loc.519():
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/main.cpp:34
+
+//void setupUSB() __attribute__((weak));
+//void setupUSB() { }
+
+int main(void)
+{
+ 704:	8b 2e       	mov	r8, r27
+main():
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/main.cpp:34
+ 706:	9a 2e       	mov	r9, r26
+ 708:	5c 01       	movw	r10, r24
+ 70a:	cf 2e       	mov	r12, r31
+ 70c:	de 2e       	mov	r13, r30
+ 70e:	e3 2e       	mov	r14, r19
+ 710:	f2 2e       	mov	r15, r18
+ 712:	05 c0       	rjmp	.+10     	; 0x71e <.L133>
+
+00000714 <.L132>:
+delay():
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/wiring.c:401 (discriminator 1)
+    while (ms > 0UL && (micros() - start) >= 1000UL) {
+ 714:	c1 14       	cp	r12, r1
+ 716:	dc 04       	cpc	r13, r12
+ 718:	ec 04       	cpc	r14, r12
+ 71a:	fc 04       	cpc	r15, r12
+ 71c:	f9 f0       	breq	.+62     	; 0x75c <.L131>
+
+0000071e <.L133>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/wiring.c:401 (discriminator 2)
+ 71e:	ed dc       	rcall	.-1574   	; 0xfa <micros>
+
+00000720 <.LVL185>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/wiring.c:401 (discriminator 3)
+ 720:	ab 01       	movw	r20, r22
+ 722:	bc 01       	movw	r22, r24
+ 724:	48 19       	sub	r20, r8
+ 726:	59 09       	sbc	r21, r9
+ 728:	6a 09       	sbc	r22, r10
+ 72a:	7b 09       	sbc	r23, r11
+ 72c:	fc 2d       	mov	r31, r12
+ 72e:	ed 2d       	mov	r30, r13
+ 730:	3e 2d       	mov	r19, r14
+ 732:	2f 2d       	mov	r18, r15
+
+00000734 <.Loc.524>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/wiring.c:402
+      ms--;
+ 734:	81 e0       	ldi	r24, 0x01	; 1
+ 736:	c8 1a       	sub	r12, r24
+ 738:	d1 08       	sbc	r13, r1
+ 73a:	e1 08       	sbc	r14, r1
+ 73c:	f1 08       	sbc	r15, r1
+
+0000073e <.Loc.525>:
+ 73e:	b8 2d       	mov	r27, r8
+ 740:	a9 2d       	mov	r26, r9
+ 742:	c5 01       	movw	r24, r10
+
+00000744 <.Loc.526>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/wiring.c:403
+      start += 1000UL;
+ 744:	c8 ee       	ldi	r28, 0xE8	; 232
+ 746:	8c 0e       	add	r8, r28
+ 748:	c3 e0       	ldi	r28, 0x03	; 3
+ 74a:	9c 1e       	adc	r9, r28
+ 74c:	a1 1c       	adc	r10, r1
+ 74e:	b1 1c       	adc	r11, r1
+
+00000750 <.Loc.527>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/wiring.c:401 (discriminator 3)
+    while (ms > 0UL && (micros() - start) >= 1000UL) {
+ 750:	48 3e       	cpi	r20, 0xE8	; 232
+ 752:	53 40       	sbci	r21, 0x03	; 3
+ 754:	60 40       	sbci	r22, 0x00	; 0
+ 756:	70 40       	sbci	r23, 0x00	; 0
+ 758:	e8 f6       	brcc	.-70     	; 0x714 <.L132>
+ 75a:	d4 cf       	rjmp	.-88     	; 0x704 <.L130>
+
+0000075c <.L131>:
+SPIFlash::begin(unsigned long):
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlash.cpp:115
+#endif
+#ifdef HIGHSPEED
+  Serial.println(F("Highspeed mode initiated."));
+  Serial.println();
+#endif
+  if (_SPIInUse == ALTSPI) {
+ 75c:	80 91 a0 02 	lds	r24, 0x02A0	; 0x8002a0 <flash+0xa>
+ 760:	8b 30       	cpi	r24, 0x0B	; 11
+ 762:	41 f1       	breq	.+80     	; 0x7b4 <.L134>
+
+00000764 <.LBB424>:
+SPIClass::begin():
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/libraries/SPI/src/SPI.cpp:28
+uint8_t SPIClass::inTransactionFlag = 0;
+#endif
+
+void SPIClass::begin()
+{
+  uint8_t sreg = SREG;
+ 764:	ff b6       	in	r15, 0x3f	; 63
+
+00000766 <.LVL189>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/libraries/SPI/src/SPI.cpp:29
+  noInterrupts(); // Protect from a scheduler and prevent transactionBegin
+ 766:	f8 94       	cli
+
+00000768 <.Loc.536>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/libraries/SPI/src/SPI.cpp:30
+  if (!initialized) {
+ 768:	80 91 ee 00 	lds	r24, 0x00EE	; 0x8000ee <SPIClass::initialized>
+ 76c:	81 11       	cpse	r24, r1
+ 76e:	1c c0       	rjmp	.+56     	; 0x7a8 <.L135>
+
+00000770 <.LBB427>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/libraries/SPI/src/SPI.cpp:32
+    // Set SS to high so a connected chip will be "deselected" by default
+    uint8_t port = digitalPinToPort(SS);
+ 770:	eb e5       	ldi	r30, 0x5B	; 91
+ 772:	f0 e0       	ldi	r31, 0x00	; 0
+
+00000774 <.LVL191>:
+ 774:	84 91       	lpm	r24, Z
+
+00000776 <.LBB429>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/libraries/SPI/src/SPI.cpp:33
+    uint8_t bit = digitalPinToBitMask(SS);
+ 776:	e2 e7       	ldi	r30, 0x72	; 114
+ 778:	f0 e0       	ldi	r31, 0x00	; 0
+
+0000077a <.LVL193>:
+ 77a:	94 91       	lpm	r25, Z
+
+0000077c <.LBB430>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/libraries/SPI/src/SPI.cpp:34
+    volatile uint8_t *reg = portModeRegister(port);
+ 77c:	e8 2f       	mov	r30, r24
+
+0000077e <.Loc.551>:
+ 77e:	f0 e0       	ldi	r31, 0x00	; 0
+ 780:	ee 0f       	add	r30, r30
+ 782:	ff 1f       	adc	r31, r31
+ 784:	e9 5b       	subi	r30, 0xB9	; 185
+ 786:	ff 4f       	sbci	r31, 0xFF	; 255
+
+00000788 <.LVL196>:
+ 788:	a5 91       	lpm	r26, Z+
+ 78a:	b5 91       	lpm	r27, Z+
+
+0000078c <.LBE430>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/libraries/SPI/src/SPI.cpp:38
+
+    // if the SS pin is not already configured as an output
+    // then set it high (to enable the internal pull-up resistor)
+    if(!(*reg & bit)){
+ 78c:	8c 91       	ld	r24, X
+
+0000078e <.Loc.557>:
+ 78e:	98 23       	and	r25, r24
+
+00000790 <.Loc.558>:
+ 790:	19 f4       	brne	.+6      	; 0x798 <.L136>
+
+00000792 <.Loc.559>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/libraries/SPI/src/SPI.cpp:39
+      digitalWrite(SS, HIGH);
+ 792:	61 e0       	ldi	r22, 0x01	; 1
+ 794:	8a e0       	ldi	r24, 0x0A	; 10
+ 796:	f1 dc       	rcall	.-1566   	; 0x17a <digitalWrite>
+
+00000798 <.L136>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/libraries/SPI/src/SPI.cpp:45
+    }
+
+    // When the SS pin is set as OUTPUT, it can be used as
+    // a general purpose output port (it doesn't influence
+    // SPI operations).
+    pinMode(SS, OUTPUT);
+ 798:	8a e0       	ldi	r24, 0x0A	; 10
+ 79a:	d0 dc       	rcall	.-1632   	; 0x13c <pinMode.constprop.0>
+
+0000079c <.LVL201>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/libraries/SPI/src/SPI.cpp:50
+
+    // Warning: if the SS pin ever becomes a LOW INPUT then SPI
+    // automatically switches to Slave, so the data direction of
+    // the SS pin MUST be kept as OUTPUT.
+    SPCR |= _BV(MSTR);
+ 79c:	6c 9a       	sbi	0x0d, 4	; 13
+
+0000079e <.Loc.565>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/libraries/SPI/src/SPI.cpp:51
+    SPCR |= _BV(SPE);
+ 79e:	6e 9a       	sbi	0x0d, 6	; 13
+
+000007a0 <.Loc.567>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/libraries/SPI/src/SPI.cpp:59
+    // MISO pin automatically overrides to INPUT.
+    // By doing this AFTER enabling SPI, we avoid accidentally
+    // clocking in a single bit since the lines go directly
+    // from "input" to SPI control.
+    // http://code.google.com/p/arduino/issues/detail?id=888
+    pinMode(SCK, OUTPUT);
+ 7a0:	8d e0       	ldi	r24, 0x0D	; 13
+ 7a2:	cc dc       	rcall	.-1640   	; 0x13c <pinMode.constprop.0>
+
+000007a4 <.LVL202>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/libraries/SPI/src/SPI.cpp:60
+    pinMode(MOSI, OUTPUT);
+ 7a4:	8b e0       	ldi	r24, 0x0B	; 11
+ 7a6:	ca dc       	rcall	.-1644   	; 0x13c <pinMode.constprop.0>
+
+000007a8 <.L135>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/libraries/SPI/src/SPI.cpp:62
+  }
+  initialized++; // reference count
+ 7a8:	80 91 ee 00 	lds	r24, 0x00EE	; 0x8000ee <SPIClass::initialized>
+ 7ac:	8f 5f       	subi	r24, 0xFF	; 255
+ 7ae:	80 93 ee 00 	sts	0x00EE, r24	; 0x8000ee <SPIClass::initialized>
+
+000007b2 <.Loc.574>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/libraries/SPI/src/SPI.cpp:63
+  SREG = sreg;
+ 7b2:	ff be       	out	0x3f, r15	; 63
+
+000007b4 <.L134>:
+SPIFlash::begin(unsigned long):
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlash.cpp:126
+    BEGIN_SPI
+  }
+
+#ifdef SPI_HAS_TRANSACTION
+  //Define the settings to be used by the SPI bus
+  if (!_SPISettingsSet) {
+ 7b4:	80 91 98 02 	lds	r24, 0x0298	; 0x800298 <flash+0x2>
+ 7b8:	81 11       	cpse	r24, r1
+ 7ba:	06 c0       	rjmp	.+12     	; 0x7c8 <.L137>
+
+000007bc <.Loc.578>:
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlash.cpp:127 (discriminator 1)
+    _settings = SPISettings(SPI_CLK, MSBFIRST, SPI_MODE0);
+ 7bc:	80 e5       	ldi	r24, 0x50	; 80
+ 7be:	80 93 96 02 	sts	0x0296, r24	; 0x800296 <flash>
+ 7c2:	81 e0       	ldi	r24, 0x01	; 1
+ 7c4:	80 93 97 02 	sts	0x0297, r24	; 0x800297 <flash+0x1>
+
+000007c8 <.L137>:
+SPIFlash::_chipID(unsigned long):
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:526
+ }
+
+ //Identifies the chip
+ bool SPIFlash::_chipID(uint32_t flashChipSize) {
+   //set some default values
+   kb4Erase.supported = kb32Erase.supported = kb64Erase.supported = chipErase.supported = true;
+ 7c8:	81 e0       	ldi	r24, 0x01	; 1
+ 7ca:	80 93 de 02 	sts	0x02DE, r24	; 0x8002de <flash+0x48>
+
+000007ce <.Loc.581>:
+ 7ce:	80 93 d2 02 	sts	0x02D2, r24	; 0x8002d2 <flash+0x3c>
+
+000007d2 <.Loc.582>:
+ 7d2:	80 93 cc 02 	sts	0x02CC, r24	; 0x8002cc <flash+0x36>
+
+000007d6 <.Loc.583>:
+ 7d6:	80 93 c6 02 	sts	0x02C6, r24	; 0x8002c6 <flash+0x30>
+
+000007da <.Loc.584>:
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:527
+   kb4Erase.opcode = SECTORERASE;
+ 7da:	80 e2       	ldi	r24, 0x20	; 32
+ 7dc:	80 93 c7 02 	sts	0x02C7, r24	; 0x8002c7 <flash+0x31>
+
+000007e0 <.Loc.585>:
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:528
+   kb32Erase.opcode = BLOCK32ERASE;
+ 7e0:	82 e5       	ldi	r24, 0x52	; 82
+ 7e2:	80 93 cd 02 	sts	0x02CD, r24	; 0x8002cd <flash+0x37>
+
+000007e6 <.Loc.586>:
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:529
+   kb64Erase.opcode = BLOCK64ERASE;
+ 7e6:	88 ed       	ldi	r24, 0xD8	; 216
+ 7e8:	80 93 d3 02 	sts	0x02D3, r24	; 0x8002d3 <flash+0x3d>
+
+000007ec <.Loc.587>:
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:530
+   kb4Erase.time = BUSY_TIMEOUT;
+ 7ec:	9a ec       	ldi	r25, 0xCA	; 202
+ 7ee:	aa e9       	ldi	r26, 0x9A	; 154
+ 7f0:	bb e3       	ldi	r27, 0x3B	; 59
+ 7f2:	10 92 c8 02 	sts	0x02C8, r1	; 0x8002c8 <flash+0x32>
+ 7f6:	90 93 c9 02 	sts	0x02C9, r25	; 0x8002c9 <flash+0x33>
+ 7fa:	a0 93 ca 02 	sts	0x02CA, r26	; 0x8002ca <flash+0x34>
+ 7fe:	b0 93 cb 02 	sts	0x02CB, r27	; 0x8002cb <flash+0x35>
+
+00000802 <.Loc.588>:
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:531
+   kb32Erase.time = kb4Erase.time * 8;
+ 802:	90 e5       	ldi	r25, 0x50	; 80
+ 804:	a6 ed       	ldi	r26, 0xD6	; 214
+ 806:	bc ed       	ldi	r27, 0xDC	; 220
+ 808:	10 92 ce 02 	sts	0x02CE, r1	; 0x8002ce <flash+0x38>
+ 80c:	90 93 cf 02 	sts	0x02CF, r25	; 0x8002cf <flash+0x39>
+ 810:	a0 93 d0 02 	sts	0x02D0, r26	; 0x8002d0 <flash+0x3a>
+ 814:	b0 93 d1 02 	sts	0x02D1, r27	; 0x8002d1 <flash+0x3b>
+
+00000818 <.Loc.589>:
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:532
+   kb64Erase.time = kb32Erase.time * 4;
+ 818:	90 e4       	ldi	r25, 0x40	; 64
+ 81a:	a9 e5       	ldi	r26, 0x59	; 89
+ 81c:	b3 e7       	ldi	r27, 0x73	; 115
+ 81e:	10 92 d4 02 	sts	0x02D4, r1	; 0x8002d4 <flash+0x3e>
+ 822:	90 93 d5 02 	sts	0x02D5, r25	; 0x8002d5 <flash+0x3f>
+ 826:	a0 93 d6 02 	sts	0x02D6, r26	; 0x8002d6 <flash+0x40>
+ 82a:	b0 93 d7 02 	sts	0x02D7, r27	; 0x8002d7 <flash+0x41>
+
+0000082e <.Loc.590>:
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:533
+   kb256Erase.supported = false;
+ 82e:	10 92 d8 02 	sts	0x02D8, r1	; 0x8002d8 <flash+0x42>
+
+00000832 <.Loc.591>:
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:534
+   chipErase.opcode = CHIPERASE;
+ 832:	80 e6       	ldi	r24, 0x60	; 96
+ 834:	80 93 df 02 	sts	0x02DF, r24	; 0x8002df <flash+0x49>
+
+00000838 <.Loc.592>:
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:535
+   chipErase.time = kb64Erase.time * 100L;
+ 838:	ad ed       	ldi	r26, 0xDD	; 221
+ 83a:	be e0       	ldi	r27, 0x0E	; 14
+ 83c:	10 92 e0 02 	sts	0x02E0, r1	; 0x8002e0 <flash+0x4a>
+ 840:	10 92 e1 02 	sts	0x02E1, r1	; 0x8002e1 <flash+0x4b>
+ 844:	a0 93 e2 02 	sts	0x02E2, r26	; 0x8002e2 <flash+0x4c>
+ 848:	b0 93 e3 02 	sts	0x02E3, r27	; 0x8002e3 <flash+0x4d>
+
+0000084c <.Loc.593>:
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:536
+   _pageSize = SPI_PAGESIZE;
+ 84c:	91 e0       	ldi	r25, 0x01	; 1
+ 84e:	10 92 ea 02 	sts	0x02EA, r1	; 0x8002ea <flash+0x54>
+ 852:	90 93 eb 02 	sts	0x02EB, r25	; 0x8002eb <flash+0x55>
+
+00000856 <.LBB433>:
+SPIFlash::_getJedecId():
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:482
+   if(!_notBusy()) {
+ 856:	32 de       	rcall	.-924    	; 0x4bc <SPIFlash::_notBusy(unsigned long) [clone .constprop.0]>
+
+00000858 <.LVL207>:
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:482 (discriminator 1)
+ 858:	80 30       	cpi	r24, 0x00	; 0
+ 85a:	c9 f0       	breq	.+50     	; 0x88e <.L138>
+
+0000085c <.LBB435>:
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:485
+   _beginSPI(JEDECID);
+ 85c:	8f e9       	ldi	r24, 0x9F	; 159
+ 85e:	c3 dc       	rcall	.-1658   	; 0x1e6 <SPIFlash::_beginSPI(unsigned char) [clone .constprop.0] [clone .isra.0]>
+
+00000860 <.LBB437>:
+SPIFlash::_nextByte(char, unsigned char):
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:247
+   return xfer(data);
+ 860:	80 e0       	ldi	r24, 0x00	; 0
+ 862:	35 dc       	rcall	.-1942   	; 0xce <SPIClass::transfer(unsigned char)>
+
+00000864 <.LBE437>:
+SPIFlash::_getJedecId():
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:486 (discriminator 1)
+ 	_chip.manufacturerID = _nextByte(READ);		// manufacturer id
+ 864:	80 93 bb 02 	sts	0x02BB, r24	; 0x8002bb <flash+0x25>
+
+00000868 <.LBB439>:
+SPIFlash::_nextByte(char, unsigned char):
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:247
+   return xfer(data);
+ 868:	80 e0       	ldi	r24, 0x00	; 0
+ 86a:	31 dc       	rcall	.-1950   	; 0xce <SPIClass::transfer(unsigned char)>
+
+0000086c <.LBE439>:
+SPIFlash::_getJedecId():
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:487 (discriminator 1)
+ 	_chip.memoryTypeID = _nextByte(READ);		// memory type
+ 86c:	80 93 bc 02 	sts	0x02BC, r24	; 0x8002bc <flash+0x26>
+
+00000870 <.LBB441>:
+SPIFlash::_nextByte(char, unsigned char):
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:247
+   return xfer(data);
+ 870:	80 e0       	ldi	r24, 0x00	; 0
+ 872:	2d dc       	rcall	.-1958   	; 0xce <SPIClass::transfer(unsigned char)>
+
+00000874 <.LBE441>:
+SPIFlash::_getJedecId():
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:488 (discriminator 1)
+ 	_chip.capacityID = _nextByte(READ);		// capacity
+ 874:	80 93 bd 02 	sts	0x02BD, r24	; 0x8002bd <flash+0x27>
+
+00000878 <.Loc.608>:
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:489
+   CHIP_DESELECT
+ 878:	61 e0       	ldi	r22, 0x01	; 1
+ 87a:	80 91 9b 02 	lds	r24, 0x029B	; 0x80029b <flash+0x5>
+ 87e:	7d dc       	rcall	.-1798   	; 0x17a <digitalWrite>
+
+00000880 <.LVL215>:
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:490
+   if (!_chip.manufacturerID) {
+ 880:	80 91 bb 02 	lds	r24, 0x02BB	; 0x8002bb <flash+0x25>
+ 884:	81 11       	cpse	r24, r1
+ 886:	03 c0       	rjmp	.+6      	; 0x88e <.L138>
+
+00000888 <.LBB443>:
+Diagnostics::troubleshoot(unsigned char, bool):
+/home/user/Arduino/libraries/SPIMemory/src/diagnostics.cpp:44
+ 888:	8b e0       	ldi	r24, 0x0B	; 11
+ 88a:	80 93 95 02 	sts	0x0295, r24	; 0x800295 <diagnostics>
+
+0000088e <.L138>:
+SPIFlash::_chipID(unsigned long):
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:541
+
+   _getJedecId();
+
+   for (uint8_t i = 0; i < sizeof(_supportedManID); i++) {
+     if (_chip.manufacturerID == _supportedManID[i]) {
+ 88e:	90 91 bb 02 	lds	r25, 0x02BB	; 0x8002bb <flash+0x25>
+ 892:	ee e6       	ldi	r30, 0x6E	; 110
+ 894:	f3 e0       	ldi	r31, 0x03	; 3
+ 896:	27 e7       	ldi	r18, 0x77	; 119
+ 898:	33 e0       	ldi	r19, 0x03	; 3
+
+0000089a <.L141>:
+ 89a:	80 81       	ld	r24, Z
+ 89c:	98 13       	cpse	r25, r24
+ 89e:	26 c0       	rjmp	.+76     	; 0x8ec <.L139>
+
+000008a0 <.Loc.615>:
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:542
+       _chip.supportedMan = true;
+ 8a0:	81 e0       	ldi	r24, 0x01	; 1
+ 8a2:	80 93 b9 02 	sts	0x02B9, r24	; 0x8002b9 <flash+0x23>
+
+000008a6 <.L140>:
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:548
+       break;
+     }
+   }
+
+   for (uint8_t i = 0; i < sizeof(_altChipEraseReq); i++) {
+     if (_chip.memoryTypeID == _altChipEraseReq[i]) {
+ 8a6:	80 91 bc 02 	lds	r24, 0x02BC	; 0x8002bc <flash+0x26>
+
+000008aa <.Loc.618>:
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:548 (discriminator 32768)
+ 8aa:	20 91 77 03 	lds	r18, 0x0377	; 0x800377 <flash+0xe1>
+ 8ae:	82 17       	cp	r24, r18
+ 8b0:	41 f0       	breq	.+16     	; 0x8c2 <.L142>
+
+000008b2 <.Loc.619>:
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:548 (discriminator 65536)
+ 8b2:	20 91 78 03 	lds	r18, 0x0378	; 0x800378 <flash+0xe2>
+ 8b6:	82 17       	cp	r24, r18
+ 8b8:	21 f0       	breq	.+8      	; 0x8c2 <.L142>
+
+000008ba <.Loc.620>:
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:548
+ 8ba:	20 91 79 03 	lds	r18, 0x0379	; 0x800379 <flash+0xe3>
+ 8be:	82 13       	cpse	r24, r18
+ 8c0:	03 c0       	rjmp	.+6      	; 0x8c8 <.L143>
+
+000008c2 <.L142>:
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:549
+       chipErase.opcode = ALT_CHIPERASE;
+ 8c2:	87 ec       	ldi	r24, 0xC7	; 199
+ 8c4:	80 93 df 02 	sts	0x02DF, r24	; 0x8002df <flash+0x49>
+
+000008c8 <.L143>:
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:563
+       _getSFDPFlashParam();
+     }
+    #endif
+     //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ End SFDP ID section ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+
+   if (_chip.supportedMan) {
+ 8c8:	f0 90 b9 02 	lds	r15, 0x02B9	; 0x8002b9 <flash+0x23>
+
+000008cc <.Loc.623>:
+ 8cc:	f1 14       	cp	r15, r1
+ 8ce:	09 f4       	brne	.+2      	; 0x8d2 <.Loc.624>
+
+000008d0 <L0^A>:
+ 8d0:	75 c0       	rjmp	.+234    	; 0x9bc <.L144>
+
+000008d2 <.Loc.624>:
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:570
+       Serial.println(F("No Chip size defined by user. Checking library support."));
+     #endif
+     //Identify capacity
+     if(_chip.manufacturerID == MACRONIX_MANID)
+     {
+       switch(_chip.capacityID)
+ 8d2:	20 91 bd 02 	lds	r18, 0x02BD	; 0x8002bd <flash+0x27>
+
+000008d6 <.Loc.625>:
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:568
+     if(_chip.manufacturerID == MACRONIX_MANID)
+ 8d6:	92 3c       	cpi	r25, 0xC2	; 194
+ 8d8:	b9 f4       	brne	.+46     	; 0x908 <.L145>
+
+000008da <.Loc.626>:
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:570
+       switch(_chip.capacityID)
+ 8da:	23 31       	cpi	r18, 0x13	; 19
+ 8dc:	61 f0       	breq	.+24     	; 0x8f6 <.L146>
+ 8de:	24 31       	cpi	r18, 0x14	; 20
+ 8e0:	09 f4       	brne	.+2      	; 0x8e4 <.LBB450>
+
+000008e2 <L0^A>:
+ 8e2:	53 c0       	rjmp	.+166    	; 0x98a <.L147>
+
+000008e4 <.LBB450>:
+Diagnostics::troubleshoot(unsigned char, bool):
+/home/user/Arduino/libraries/SPIMemory/src/diagnostics.cpp:44
+ 8e4:	82 e0       	ldi	r24, 0x02	; 2
+ 8e6:	80 93 95 02 	sts	0x0295, r24	; 0x800295 <diagnostics>
+
+000008ea <.LVL224>:
+ 8ea:	0e c0       	rjmp	.+28     	; 0x908 <.L145>
+
+000008ec <.L139>:
+ 8ec:	31 96       	adiw	r30, 0x01	; 1
+
+000008ee <.LBE450>:
+SPIFlash::_chipID(unsigned long):
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:540 (discriminator 2)
+   for (uint8_t i = 0; i < sizeof(_supportedManID); i++) {
+ 8ee:	2e 17       	cp	r18, r30
+ 8f0:	3f 07       	cpc	r19, r31
+ 8f2:	99 f6       	brne	.-90     	; 0x89a <.L141>
+ 8f4:	d8 cf       	rjmp	.-80     	; 0x8a6 <.L140>
+
+000008f6 <.L146>:
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:573
+       {
+         case MX25L4005:
+         _chip.capacity = MB(4);
+ 8f6:	a0 e4       	ldi	r26, 0x40	; 64
+
+000008f8 <.L207>:
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:577
+         break;
+
+         case MX25L8005:
+         _chip.capacity = MB(8);
+ 8f8:	10 92 be 02 	sts	0x02BE, r1	; 0x8002be <flash+0x28>
+ 8fc:	10 92 bf 02 	sts	0x02BF, r1	; 0x8002bf <flash+0x29>
+ 900:	a0 93 c0 02 	sts	0x02C0, r26	; 0x8002c0 <flash+0x2a>
+ 904:	10 92 c1 02 	sts	0x02C1, r1	; 0x8002c1 <flash+0x2b>
+
+00000908 <.L145>:
+ 908:	e4 e1       	ldi	r30, 0x14	; 20
+ 90a:	f3 e0       	ldi	r31, 0x03	; 3
+
+0000090c <.Loc.637>:
+delay():
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/wiring.c:397
+  unsigned long start = micros();
+ 90c:	80 e0       	ldi	r24, 0x00	; 0
+ 90e:	90 e0       	ldi	r25, 0x00	; 0
+
+00000910 <.L151>:
+SPIFlash::_chipID(unsigned long):
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:585
+         default:
+         _troubleshoot(UNKNOWNCHIP); //Error code for unidentified capacity
+ 		 } //TODO - Set up other manufaturerIDs in a similar pattern.
+ 	 }
+     for (uint8_t j = 0; j < sizeof(_capID); j++) {
+       if (_chip.capacityID == _capID[j]) {
+ 910:	30 81       	ld	r19, Z
+ 912:	32 13       	cpse	r19, r18
+ 914:	3c c0       	rjmp	.+120    	; 0x98e <.L149>
+
+00000916 <.Loc.640>:
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:586
+         _chip.capacity = (_memSize[j]);
+ 916:	88 0f       	add	r24, r24
+ 918:	99 1f       	adc	r25, r25
+ 91a:	88 0f       	add	r24, r24
+ 91c:	99 1f       	adc	r25, r25
+
+0000091e <.Loc.641>:
+ 91e:	8a 5d       	subi	r24, 0xDA	; 218
+ 920:	9c 4f       	sbci	r25, 0xFC	; 252
+ 922:	fc 01       	movw	r30, r24
+
+00000924 <.Loc.642>:
+ 924:	80 81       	ld	r24, Z
+ 926:	91 81       	ldd	r25, Z+1	; 0x01
+ 928:	a2 81       	ldd	r26, Z+2	; 0x02
+ 92a:	b3 81       	ldd	r27, Z+3	; 0x03
+ 92c:	80 93 be 02 	sts	0x02BE, r24	; 0x8002be <flash+0x28>
+ 930:	90 93 bf 02 	sts	0x02BF, r25	; 0x8002bf <flash+0x29>
+ 934:	a0 93 c0 02 	sts	0x02C0, r26	; 0x8002c0 <flash+0x2a>
+ 938:	b0 93 c1 02 	sts	0x02C1, r27	; 0x8002c1 <flash+0x2b>
+
+0000093c <.Loc.643>:
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:587
+         _chip.supported = true;
+ 93c:	81 e0       	ldi	r24, 0x01	; 1
+ 93e:	80 93 b8 02 	sts	0x02B8, r24	; 0x8002b8 <flash+0x22>
+
+00000942 <.L150>:
+SPIFlash::begin(unsigned long):
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlash.cpp:135
+  if (!_clockdiv) {
+    _clockdiv = SPI_CLOCK_DIV2;
+  }
+#endif
+  bool retVal = _chipID(flashChipSize);
+  _endSPI();
+ 942:	99 dd       	rcall	.-1230   	; 0x476 <SPIFlash::_endSPI() [clone .constprop.0]>
+
+00000944 <.LVL232>:
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlash.cpp:136
+  chipPoweredDown = false;
+ 944:	10 92 a5 02 	sts	0x02A5, r1	; 0x8002a5 <flash+0xf>
+
+00000948 <.LBB473>:
+SPIFlash::_disableGlobalBlockProtect():
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:500
+   if (_chip.memoryTypeID == SST25) {
+ 948:	80 91 bc 02 	lds	r24, 0x02BC	; 0x8002bc <flash+0x26>
+
+0000094c <.Loc.649>:
+ 94c:	85 32       	cpi	r24, 0x25	; 37
+ 94e:	09 f0       	breq	.+2      	; 0x952 <.LBB475>
+
+00000950 <L0^A>:
+ 950:	3d c0       	rjmp	.+122    	; 0x9cc <.L155>
+
+00000952 <.LBB475>:
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:501
+     _readStat1();
+ 952:	72 dc       	rcall	.-1820   	; 0x238 <SPIFlash::_readStat1() [clone .constprop.0]>
+
+00000954 <.LVL234>:
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:502
+     uint8_t _tempStat1 = stat1 & 0xC3;
+ 954:	80 91 aa 02 	lds	r24, 0x02AA	; 0x8002aa <flash+0x14>
+ 958:	83 7c       	andi	r24, 0xC3	; 195
+ 95a:	e8 2e       	mov	r14, r24
+
+0000095c <.LVL235>:
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:503
+     _beginSPI(WRITESTATEN);
+ 95c:	80 e5       	ldi	r24, 0x50	; 80
+ 95e:	43 dc       	rcall	.-1914   	; 0x1e6 <SPIFlash::_beginSPI(unsigned char) [clone .constprop.0] [clone .isra.0]>
+
+00000960 <.LVL236>:
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:504
+     CHIP_DESELECT
+ 960:	61 e0       	ldi	r22, 0x01	; 1
+ 962:	80 91 9b 02 	lds	r24, 0x029B	; 0x80029b <flash+0x5>
+ 966:	09 dc       	rcall	.-2030   	; 0x17a <digitalWrite>
+
+00000968 <.LVL237>:
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:505
+     _beginSPI(WRITESTAT1);
+ 968:	81 e0       	ldi	r24, 0x01	; 1
+ 96a:	3d dc       	rcall	.-1926   	; 0x1e6 <SPIFlash::_beginSPI(unsigned char) [clone .constprop.0] [clone .isra.0]>
+
+0000096c <.LBB476>:
+SPIFlash::_nextByte(char, unsigned char):
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:247
+   return xfer(data);
+ 96c:	8e 2d       	mov	r24, r14
+ 96e:	af db       	rcall	.-2210   	; 0xce <SPIClass::transfer(unsigned char)>
+
+00000970 <.L208>:
+SPIFlash::_writeDisable():
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:461
+   CHIP_DESELECT
+ 970:	61 e0       	ldi	r22, 0x01	; 1
+ 972:	80 91 9b 02 	lds	r24, 0x029B	; 0x80029b <flash+0x5>
+ 976:	01 dc       	rcall	.-2046   	; 0x17a <digitalWrite>
+
+00000978 <.L156>:
+.Loc.490():
+/home/user/Desktop/Project/programmer/read/read.ino:18 (discriminator 1)
+  Serial.begin(115200);
+  delay(200);
+
+  if (!flash.begin()) {
+ 978:	f1 10       	cpse	r15, r1
+ 97a:	4c c0       	rjmp	.+152    	; 0xa14 <.L158>
+
+0000097c <.LBB499>:
+Print::print(char const*):
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/Print.cpp:64
+  return write(s.c_str(), s.length());
+}
+
+size_t Print::print(const char str[])
+{
+  return write(str);
+ 97c:	88 ed       	ldi	r24, 0xD8	; 216
+ 97e:	90 e0       	ldi	r25, 0x00	; 0
+ 980:	ce dd       	rcall	.-1124   	; 0x51e <Print::write(char const*) [clone .constprop.0] [clone .isra.0]>
+
+00000982 <.LBB503>:
+Print::println():
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/Print.cpp:128
+  return x.printTo(*this);
+}
+
+size_t Print::println(void)
+{
+  return write("\r\n");
+ 982:	85 ee       	ldi	r24, 0xE5	; 229
+ 984:	90 e0       	ldi	r25, 0x00	; 0
+ 986:	cb dd       	rcall	.-1130   	; 0x51e <Print::write(char const*) [clone .constprop.0] [clone .isra.0]>
+
+00000988 <.L159>:
+.Loc.490():
+/home/user/Desktop/Project/programmer/read/read.ino:20
+    Serial.println("Init failed!");
+    while (1);
+ 988:	ff cf       	rjmp	.-2      	; 0x988 <.L159>
+
+0000098a <.L147>:
+SPIFlash::_chipID(unsigned long):
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:577
+         _chip.capacity = MB(8);
+ 98a:	a0 e8       	ldi	r26, 0x80	; 128
+ 98c:	b5 cf       	rjmp	.-150    	; 0x8f8 <.L207>
+
+0000098e <.L149>:
+ 98e:	31 96       	adiw	r30, 0x01	; 1
+
+00000990 <.Loc.670>:
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:584 (discriminator 2)
+     for (uint8_t j = 0; j < sizeof(_capID); j++) {
+ 990:	01 96       	adiw	r24, 0x01	; 1
+
+00000992 <.Loc.671>:
+ 992:	82 31       	cpi	r24, 0x12	; 18
+ 994:	91 05       	cpc	r25, r1
+ 996:	09 f0       	breq	.+2      	; 0x99a <.Loc.672>
+
+00000998 <L0^A>:
+ 998:	bb cf       	rjmp	.-138    	; 0x910 <.L151>
+
+0000099a <.Loc.672>:
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:609
+       return false;
+     }
+
+   }
+
+   if (!_chip.capacity) {
+ 99a:	80 91 be 02 	lds	r24, 0x02BE	; 0x8002be <flash+0x28>
+
+0000099e <.Loc.673>:
+ 99e:	90 91 bf 02 	lds	r25, 0x02BF	; 0x8002bf <flash+0x29>
+ 9a2:	a0 91 c0 02 	lds	r26, 0x02C0	; 0x8002c0 <flash+0x2a>
+ 9a6:	b0 91 c1 02 	lds	r27, 0x02C1	; 0x8002c1 <flash+0x2b>
+ 9aa:	89 2b       	or	r24, r25
+ 9ac:	8a 2b       	or	r24, r26
+ 9ae:	8b 2b       	or	r24, r27
+ 9b0:	41 f6       	brne	.-112    	; 0x942 <.L150>
+
+000009b2 <.LBB465>:
+Diagnostics::troubleshoot(unsigned char, bool):
+/home/user/Arduino/libraries/SPIMemory/src/diagnostics.cpp:44
+ 9b2:	83 e0       	ldi	r24, 0x03	; 3
+ 9b4:	80 93 95 02 	sts	0x0295, r24	; 0x800295 <diagnostics>
+
+000009b8 <.LBE465>:
+SPIFlash::_chipID(unsigned long):
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:604
+       return false;
+ 9b8:	f1 2c       	mov	r15, r1
+
+000009ba <.Loc.678>:
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:625
+       return true;
+     }
+
+     else {
+       _troubleshoot(UNKNOWNCAP);
+       return false;
+ 9ba:	c3 cf       	rjmp	.-122    	; 0x942 <.L150>
+
+000009bc <.L144>:
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:596
+     if (_chip.sfdpAvailable) {
+ 9bc:	f0 90 ba 02 	lds	r15, 0x02BA	; 0x8002ba <flash+0x24>
+
+000009c0 <.Loc.680>:
+ 9c0:	f1 10       	cpse	r15, r1
+ 9c2:	bf cf       	rjmp	.-130    	; 0x942 <.L150>
+
+000009c4 <.LBB458>:
+Diagnostics::troubleshoot(unsigned char, bool):
+/home/user/Arduino/libraries/SPIMemory/src/diagnostics.cpp:44
+ 9c4:	82 e0       	ldi	r24, 0x02	; 2
+ 9c6:	80 93 95 02 	sts	0x0295, r24	; 0x800295 <diagnostics>
+
+000009ca <.LBE458>:
+SPIFlash::_chipID(unsigned long):
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:604
+       return false;
+ 9ca:	bb cf       	rjmp	.-138    	; 0x942 <.L150>
+
+000009cc <.L155>:
+SPIFlash::_disableGlobalBlockProtect():
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:509
+   else if (_chip.memoryTypeID == SST26) {
+ 9cc:	86 32       	cpi	r24, 0x26	; 38
+ 9ce:	a1 f6       	brne	.-88     	; 0x978 <.L156>
+
+000009d0 <.Loc.687>:
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:510
+     if(!_notBusy()) {
+ 9d0:	75 dd       	rcall	.-1302   	; 0x4bc <SPIFlash::_notBusy(unsigned long) [clone .constprop.0]>
+
+000009d2 <.LVL255>:
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:510 (discriminator 1)
+ 9d2:	80 30       	cpi	r24, 0x00	; 0
+ 9d4:	89 f2       	breq	.-94     	; 0x978 <.L156>
+
+000009d6 <.LBB481>:
+SPIFlash::_writeEnable(bool):
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:443
+   _beginSPI(WRITEENABLE);
+ 9d6:	86 e0       	ldi	r24, 0x06	; 6
+ 9d8:	06 dc       	rcall	.-2036   	; 0x1e6 <SPIFlash::_beginSPI(unsigned char) [clone .constprop.0] [clone .isra.0]>
+
+000009da <.LVL257>:
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:444
+   CHIP_DESELECT
+ 9da:	61 e0       	ldi	r22, 0x01	; 1
+ 9dc:	80 91 9b 02 	lds	r24, 0x029B	; 0x80029b <flash+0x5>
+ 9e0:	cc db       	rcall	.-2152   	; 0x17a <digitalWrite>
+
+000009e2 <.LVL258>:
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:445
+   if (!(_readStat1() & WRTEN)) {
+ 9e2:	2a dc       	rcall	.-1964   	; 0x238 <SPIFlash::_readStat1() [clone .constprop.0]>
+
+000009e4 <.LVL259>:
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:445 (discriminator 1)
+ 9e4:	81 fd       	sbrc	r24, 1
+ 9e6:	03 c0       	rjmp	.+6      	; 0x9ee <.L157>
+
+000009e8 <.LBB483>:
+Diagnostics::troubleshoot(unsigned char, bool):
+/home/user/Arduino/libraries/SPIMemory/src/diagnostics.cpp:44
+ 9e8:	86 e0       	ldi	r24, 0x06	; 6
+ 9ea:	80 93 95 02 	sts	0x0295, r24	; 0x800295 <diagnostics>
+
+000009ee <.L157>:
+.Loc.697():
+/usr/lib/avr/include/util/delay.h:257
+ 9ee:	85 e3       	ldi	r24, 0x35	; 53
+
+000009f0 <.L1^B3>:
+ 9f0:	8a 95       	dec	r24
+ 9f2:	f1 f7       	brne	.-4      	; 0x9f0 <.L1^B3>
+	...
+
+000009f6 <.LBE487>:
+SPIFlash::_disableGlobalBlockProtect():
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:515
+     _beginSPI(ULBPR);
+ 9f6:	88 e9       	ldi	r24, 0x98	; 152
+ 9f8:	f6 db       	rcall	.-2068   	; 0x1e6 <SPIFlash::_beginSPI(unsigned char) [clone .constprop.0] [clone .isra.0]>
+
+000009fa <.LVL263>:
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:516
+     CHIP_DESELECT
+ 9fa:	61 e0       	ldi	r22, 0x01	; 1
+ 9fc:	80 91 9b 02 	lds	r24, 0x029B	; 0x80029b <flash+0x5>
+ a00:	bc db       	rcall	.-2184   	; 0x17a <digitalWrite>
+
+00000a02 <.LBB489>:
+.Loc.702():
+/usr/lib/avr/include/util/delay.h:257
+ a02:	87 ec       	ldi	r24, 0xC7	; 199
+ a04:	90 e0       	ldi	r25, 0x00	; 0
+
+00000a06 <.L1^B4>:
+ a06:	01 97       	sbiw	r24, 0x01	; 1
+ a08:	f1 f7       	brne	.-4      	; 0xa06 <.L1^B4>
+ a0a:	00 c0       	rjmp	.+0      	; 0xa0c <L0^A>
+
+00000a0c <L0^A>:
+	...
+
+00000a0e <.LBE489>:
+SPIFlash::_writeDisable():
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:460
+ 	_beginSPI(WRITEDISABLE);
+ a0e:	84 e0       	ldi	r24, 0x04	; 4
+ a10:	ea db       	rcall	.-2092   	; 0x1e6 <SPIFlash::_beginSPI(unsigned char) [clone .constprop.0] [clone .isra.0]>
+
+00000a12 <.LVL266>:
+ a12:	ae cf       	rjmp	.-164    	; 0x970 <.L208>
+
+00000a14 <.L158>:
+Print::print(char const*):
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/Print.cpp:64
+  return write(str);
+ a14:	88 ee       	ldi	r24, 0xE8	; 232
+ a16:	90 e0       	ldi	r25, 0x00	; 0
+ a18:	82 dd       	rcall	.-1276   	; 0x51e <Print::write(char const*) [clone .constprop.0] [clone .isra.0]>
+
+00000a1a <.LBB510>:
+Print::println():
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/Print.cpp:128
+  return write("\r\n");
+ a1a:	85 ee       	ldi	r24, 0xE5	; 229
+ a1c:	90 e0       	ldi	r25, 0x00	; 0
+ a1e:	7f dd       	rcall	.-1282   	; 0x51e <Print::write(char const*) [clone .constprop.0] [clone .isra.0]>
+
+00000a20 <.L160>:
+.Loc.490():
+/home/user/Desktop/Project/programmer/read/read.ino:25 (discriminator 1)
+  }
+
+  // Handshake: wait for Python to send a byte before starting
+  Serial.println("READY");
+  while (!Serial.available()) { /* wait */ }
+ a20:	8f ee       	ldi	r24, 0xEF	; 239
+ a22:	91 e0       	ldi	r25, 0x01	; 1
+ a24:	48 dc       	rcall	.-1904   	; 0x2b6 <HardwareSerial::available()>
+
+00000a26 <.LVL270>:
+/home/user/Desktop/Project/programmer/read/read.ino:25 (discriminator 2)
+ a26:	89 2b       	or	r24, r25
+ a28:	d9 f3       	breq	.-10     	; 0xa20 <.L160>
+
+00000a2a <.Loc.718>:
+/home/user/Desktop/Project/programmer/read/read.ino:26
+  Serial.read();   // consume the go signal
+ a2a:	8f ee       	ldi	r24, 0xEF	; 239
+ a2c:	91 e0       	ldi	r25, 0x01	; 1
+ a2e:	6e dc       	rcall	.-1828   	; 0x30c <HardwareSerial::read()>
+
+00000a30 <.LBB512>:
+/home/user/Desktop/Project/programmer/read/read.ino:28
+
+  for (uint32_t addr = 0; addr < FLASH_SIZE; addr += CHUNK) {
+ a30:	e1 2c       	mov	r14, r1
+ a32:	f1 2c       	mov	r15, r1
+ a34:	67 01       	movw	r12, r14
+
+00000a36 <.LBB513>:
+Diagnostics::troubleshoot(unsigned char, bool):
+/home/user/Arduino/libraries/SPIMemory/src/diagnostics.cpp:44
+ a36:	81 e0       	ldi	r24, 0x01	; 1
+ a38:	a8 2e       	mov	r10, r24
+ a3a:	8f e0       	ldi	r24, 0x0F	; 15
+ a3c:	b8 2e       	mov	r11, r24
+
+00000a3e <.L169>:
+SPIFlash::_isChipPoweredDown():
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:411
+ bool SPIFlash::_isChipPoweredDown(void) {
+ a3e:	5c 2d       	mov	r21, r12
+ a40:	4d 2d       	mov	r20, r13
+ a42:	3e 2d       	mov	r19, r14
+ a44:	2f 2d       	mov	r18, r15
+
+00000a46 <.Loc.730>:
+SPIFlash::_addressCheck(unsigned long, unsigned long):
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:57
+   if (_submittedAddress + size >= _chip.capacity) {
+ a46:	8f ef       	ldi	r24, 0xFF	; 255
+ a48:	d8 1a       	sub	r13, r24
+ a4a:	e8 0a       	sbc	r14, r24
+ a4c:	f8 0a       	sbc	r15, r24
+
+00000a4e <.Loc.731>:
+SPIFlash::_isChipPoweredDown():
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:412
+   if (chipPoweredDown) {
+ a4e:	80 91 a5 02 	lds	r24, 0x02A5	; 0x8002a5 <flash+0xf>
+ a52:	81 11       	cpse	r24, r1
+ a54:	17 c0       	rjmp	.+46     	; 0xa84 <.L161>
+
+00000a56 <.LBB531>:
+SPIFlash::_addressCheck(unsigned long, unsigned long):
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:46
+   if (_errorcode == UNKNOWNCAP || _errorcode == NORESPONSE) {
+ a56:	80 91 95 02 	lds	r24, 0x0295	; 0x800295 <diagnostics>
+ a5a:	87 7f       	andi	r24, 0xF7	; 247
+ a5c:	83 30       	cpi	r24, 0x03	; 3
+ a5e:	a9 f4       	brne	.+42     	; 0xa8a <.L201>
+
+00000a60 <.L162>:
+.Loc.490():
+/home/user/Desktop/Project/programmer/read/read.ino:30
+    flash.readByteArray(addr, buf, CHUNK);
+    Serial.write(buf, CHUNK);   // raw bytes out
+ a60:	40 e0       	ldi	r20, 0x00	; 0
+ a62:	51 e0       	ldi	r21, 0x01	; 1
+ a64:	6f ee       	ldi	r22, 0xEF	; 239
+ a66:	70 e0       	ldi	r23, 0x00	; 0
+ a68:	8f ee       	ldi	r24, 0xEF	; 239
+ a6a:	91 e0       	ldi	r25, 0x01	; 1
+ a6c:	da dc       	rcall	.-1612   	; 0x422 <Print::write(unsigned char const*, unsigned int)>
+
+00000a6e <.LVL276>:
+/home/user/Desktop/Project/programmer/read/read.ino:28 (discriminator 2)
+  for (uint32_t addr = 0; addr < FLASH_SIZE; addr += CHUNK) {
+ a6e:	c1 14       	cp	r12, r1
+ a70:	dc 04       	cpc	r13, r12
+ a72:	80 e4       	ldi	r24, 0x40	; 64
+ a74:	e8 06       	cpc	r14, r24
+ a76:	fc 04       	cpc	r15, r12
+ a78:	11 f7       	brne	.-60     	; 0xa3e <.L169>
+
+00000a7a <.L171>:
+serialEventRun():
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/HardwareSerial.cpp:67 (discriminator 2)
+  if (Serial0_available && serialEvent && Serial0_available()) serialEvent();
+ a7a:	29 dc       	rcall	.-1966   	; 0x2ce <Serial0_available()>
+
+00000a7c <.LVL278>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/HardwareSerial.cpp:67 (discriminator 3)
+ a7c:	80 30       	cpi	r24, 0x00	; 0
+ a7e:	e9 f3       	breq	.-6      	; 0xa7a <.L171>
+
+00000a80 <.Loc.752>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/cores/MCUdude_corefiles/HardwareSerial.cpp:67 (discriminator 7)
+ a80:	bf da       	rcall	.-2690   	; 0x0 <__vectors>
+
+00000a82 <.LVL279>:
+ a82:	fb cf       	rjmp	.-10     	; 0xa7a <.L171>
+
+00000a84 <.L161>:
+Diagnostics::troubleshoot(unsigned char, bool):
+/home/user/Arduino/libraries/SPIMemory/src/diagnostics.cpp:44
+ a84:	b0 92 95 02 	sts	0x0295, r11	; 0x800295 <diagnostics>
+
+00000a88 <.LBE541>:
+SPIFlash::_isChipPoweredDown():
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:414
+     return true;
+ a88:	eb cf       	rjmp	.-42     	; 0xa60 <.L162>
+
+00000a8a <.L201>:
+SPIFlash::_addressCheck(unsigned long, unsigned long):
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:49
+ 	if (!_chip.capacity) {
+ a8a:	80 91 be 02 	lds	r24, 0x02BE	; 0x8002be <flash+0x28>
+ a8e:	90 91 bf 02 	lds	r25, 0x02BF	; 0x8002bf <flash+0x29>
+ a92:	a0 91 c0 02 	lds	r26, 0x02C0	; 0x8002c0 <flash+0x2a>
+ a96:	b0 91 c1 02 	lds	r27, 0x02C1	; 0x8002c1 <flash+0x2b>
+
+00000a9a <.Loc.767>:
+ a9a:	10 97       	sbiw	r26, 0x00	; 0
+ a9c:	90 40       	sbci	r25, 0x00	; 0
+ a9e:	80 40       	sbci	r24, 0x00	; 0
+ aa0:	19 f4       	brne	.+6      	; 0xaa8 <.L164>
+
+00000aa2 <.LBI522>:
+Diagnostics::troubleshoot(unsigned char, bool):
+/home/user/Arduino/libraries/SPIMemory/src/diagnostics.cpp:44
+ aa2:	a0 92 95 02 	sts	0x0295, r10	; 0x800295 <diagnostics>
+
+00000aa6 <.LVL284>:
+ aa6:	dc cf       	rjmp	.-72     	; 0xa60 <.L162>
+
+00000aa8 <.L164>:
+SPIFlash::_addressCheck(unsigned long, unsigned long):
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:57
+   if (_submittedAddress + size >= _chip.capacity) {
+ aa8:	c8 16       	cp	r12, r24
+ aaa:	d9 06       	cpc	r13, r25
+ aac:	ea 06       	cpc	r14, r26
+ aae:	fb 06       	cpc	r15, r27
+ ab0:	a0 f1       	brcs	.+104    	; 0xb1a <.L172>
+
+00000ab2 <.Loc.773>:
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:64
+     _addressOverflow = ((_submittedAddress + size) - _chip.capacity);
+ ab2:	e6 01       	movw	r28, r12
+ ab4:	f7 01       	movw	r30, r14
+ ab6:	c8 1b       	sub	r28, r24
+ ab8:	d9 0b       	sbc	r29, r25
+ aba:	ea 0b       	sbc	r30, r26
+ abc:	fb 0b       	sbc	r31, r27
+ abe:	ce 01       	movw	r24, r28
+ ac0:	df 01       	movw	r26, r30
+
+00000ac2 <.L165>:
+ ac2:	80 93 f4 02 	sts	0x02F4, r24	; 0x8002f4 <flash+0x5e>
+ ac6:	90 93 f5 02 	sts	0x02F5, r25	; 0x8002f5 <flash+0x5f>
+ aca:	a0 93 f6 02 	sts	0x02F6, r26	; 0x8002f6 <flash+0x60>
+ ace:	b0 93 f7 02 	sts	0x02F7, r27	; 0x8002f7 <flash+0x61>
+ ad2:	50 93 f0 02 	sts	0x02F0, r21	; 0x8002f0 <flash+0x5a>
+ ad6:	40 93 f1 02 	sts	0x02F1, r20	; 0x8002f1 <flash+0x5b>
+ ada:	30 93 f2 02 	sts	0x02F2, r19	; 0x8002f2 <flash+0x5c>
+ ade:	20 93 f3 02 	sts	0x02F3, r18	; 0x8002f3 <flash+0x5d>
+
+00000ae2 <.Loc.775>:
+SPIFlash::_prep(unsigned char, unsigned long, unsigned long):
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:128 (discriminator 4)
+       if (_isChipPoweredDown() || !_addressCheck(_addr, size) || !_notBusy()) {
+ ae2:	ec dc       	rcall	.-1576   	; 0x4bc <SPIFlash::_notBusy(unsigned long) [clone .constprop.0]>
+
+00000ae4 <.LVL287>:
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:128 (discriminator 5)
+ ae4:	80 30       	cpi	r24, 0x00	; 0
+ ae6:	09 f4       	brne	.+2      	; 0xaea <.Loc.777>
+
+00000ae8 <L0^A>:
+ ae8:	bb cf       	rjmp	.-138    	; 0xa60 <.L162>
+
+00000aea <.Loc.777>:
+SPIFlash::readByteArray(unsigned long, unsigned char*, unsigned int, bool):
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlash.cpp:316
+  }
+  if(fastRead) {
+    _beginSPI(FASTREAD);
+  }
+  else {
+    _beginSPI(READDATA);
+ aea:	83 e0       	ldi	r24, 0x03	; 3
+ aec:	7c db       	rcall	.-2312   	; 0x1e6 <SPIFlash::_beginSPI(unsigned char) [clone .constprop.0] [clone .isra.0]>
+
+00000aee <.LBB556>:
+SPIClass::transfer(void*, unsigned int):
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/libraries/SPI/src/SPI.h:250
+    return out.val;
+  }
+  inline static void transfer(void *buf, size_t count) {
+    if (count == 0) return;
+    uint8_t *p = (uint8_t *)buf;
+    SPDR = *p;
+ aee:	80 91 ef 00 	lds	r24, 0x00EF	; 0x8000ef <buf>
+
+00000af2 <.Loc.783>:
+ af2:	8f b9       	out	0x0f, r24	; 15
+
+00000af4 <.Loc.784>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/libraries/SPI/src/SPI.h:249
+    uint8_t *p = (uint8_t *)buf;
+ af4:	ef ee       	ldi	r30, 0xEF	; 239
+ af6:	f0 e0       	ldi	r31, 0x00	; 0
+
+00000af8 <.L167>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/libraries/SPI/src/SPI.h:252
+    while (--count > 0) {
+      uint8_t out = *(p + 1);
+ af8:	91 81       	ldd	r25, Z+1	; 0x01
+
+00000afa <.L166>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/libraries/SPI/src/SPI.h:253 (discriminator 1)
+      while (!(SPSR & _BV(SPIF))) ;
+ afa:	77 9b       	sbis	0x0e, 7	; 14
+ afc:	fe cf       	rjmp	.-4      	; 0xafa <.L166>
+
+00000afe <.Loc.787>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/libraries/SPI/src/SPI.h:254
+      uint8_t in = SPDR;
+ afe:	8f b1       	in	r24, 0x0f	; 15
+
+00000b00 <.LVL293>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/libraries/SPI/src/SPI.h:255
+      SPDR = out;
+ b00:	9f b9       	out	0x0f, r25	; 15
+
+00000b02 <.Loc.789>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/libraries/SPI/src/SPI.h:256
+      *p++ = in;
+ b02:	81 93       	st	Z+, r24
+
+00000b04 <.LBE561>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/libraries/SPI/src/SPI.h:251 (discriminator 1)
+    while (--count > 0) {
+ b04:	81 e0       	ldi	r24, 0x01	; 1
+ b06:	ee 3e       	cpi	r30, 0xEE	; 238
+ b08:	f8 07       	cpc	r31, r24
+
+00000b0a <.Loc.792>:
+ b0a:	b1 f7       	brne	.-20     	; 0xaf8 <.L167>
+
+00000b0c <.L168>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/libraries/SPI/src/SPI.h:258 (discriminator 1)
+    }
+    while (!(SPSR & _BV(SPIF))) ;
+ b0c:	77 9b       	sbis	0x0e, 7	; 14
+ b0e:	fe cf       	rjmp	.-4      	; 0xb0c <.L168>
+
+00000b10 <.Loc.794>:
+/home/user/.arduino15/packages/MiniCore/hardware/avr/3.1.3/libraries/SPI/src/SPI.h:259
+    *p = SPDR;
+ b10:	8f b1       	in	r24, 0x0f	; 15
+
+00000b12 <.Loc.795>:
+ b12:	80 93 ee 01 	sts	0x01EE, r24	; 0x8001ee <buf+0xff>
+
+00000b16 <.LBE556>:
+SPIFlash::readByteArray(unsigned long, unsigned char*, unsigned int, bool):
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlash.cpp:319
+  }
+  _nextBuf(READDATA, &(*data_buffer), bufferSize);
+  _endSPI();
+ b16:	af dc       	rcall	.-1698   	; 0x476 <SPIFlash::_endSPI() [clone .constprop.0]>
+
+00000b18 <.LVL298>:
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlash.cpp:323
+  #ifdef RUNDIAGNOSTIC
+    _spifuncruntime = micros() - _spifuncruntime;
+  #endif
+	return true;
+ b18:	a3 cf       	rjmp	.-186    	; 0xa60 <.L162>
+
+00000b1a <.L172>:
+SPIFlash::_addressCheck(unsigned long, unsigned long):
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:72
+     _addressOverflow = false;
+ b1a:	80 e0       	ldi	r24, 0x00	; 0
+ b1c:	90 e0       	ldi	r25, 0x00	; 0
+ b1e:	dc 01       	movw	r26, r24
+ b20:	d0 cf       	rjmp	.-96     	; 0xac2 <.L165>
+
+00000b22 <_sub_I_65535_0.0>:
+_sub_I_65535_0.0():
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:72
+ b22:	cf 93       	push	r28
+ b24:	df 93       	push	r29
+ b26:	10 92 f1 01 	sts	0x01F1, r1	; 0x8001f1 <Serial+0x2>
+ b2a:	10 92 f2 01 	sts	0x01F2, r1	; 0x8001f2 <Serial+0x3>
+ b2e:	88 ee       	ldi	r24, 0xE8	; 232
+ b30:	93 e0       	ldi	r25, 0x03	; 3
+ b32:	80 93 f3 01 	sts	0x01F3, r24	; 0x8001f3 <Serial+0x4>
+ b36:	90 93 f4 01 	sts	0x01F4, r25	; 0x8001f4 <Serial+0x5>
+ b3a:	10 92 f5 01 	sts	0x01F5, r1	; 0x8001f5 <Serial+0x6>
+ b3e:	10 92 f6 01 	sts	0x01F6, r1	; 0x8001f6 <Serial+0x7>
+ b42:	8a ec       	ldi	r24, 0xCA	; 202
+ b44:	90 e0       	ldi	r25, 0x00	; 0
+ b46:	80 93 ef 01 	sts	0x01EF, r24	; 0x8001ef <Serial>
+ b4a:	90 93 f0 01 	sts	0x01F0, r25	; 0x8001f0 <Serial+0x1>
+ b4e:	80 e4       	ldi	r24, 0x40	; 64
+ b50:	80 93 fb 01 	sts	0x01FB, r24	; 0x8001fb <Serial+0xc>
+ b54:	10 92 fc 01 	sts	0x01FC, r1	; 0x8001fc <Serial+0xd>
+ b58:	29 e2       	ldi	r18, 0x29	; 41
+ b5a:	20 93 fd 01 	sts	0x01FD, r18	; 0x8001fd <Serial+0xe>
+ b5e:	10 92 fe 01 	sts	0x01FE, r1	; 0x8001fe <Serial+0xf>
+ b62:	2b e2       	ldi	r18, 0x2B	; 43
+ b64:	20 93 ff 01 	sts	0x01FF, r18	; 0x8001ff <Serial+0x10>
+ b68:	10 92 00 02 	sts	0x0200, r1	; 0x800200 <Serial+0x11>
+ b6c:	2a e2       	ldi	r18, 0x2A	; 42
+ b6e:	20 93 01 02 	sts	0x0201, r18	; 0x800201 <Serial+0x12>
+ b72:	10 92 02 02 	sts	0x0202, r1	; 0x800202 <Serial+0x13>
+ b76:	80 93 03 02 	sts	0x0203, r24	; 0x800203 <Serial+0x14>
+ b7a:	10 92 04 02 	sts	0x0204, r1	; 0x800204 <Serial+0x15>
+ b7e:	8c e2       	ldi	r24, 0x2C	; 44
+ b80:	80 93 05 02 	sts	0x0205, r24	; 0x800205 <Serial+0x16>
+ b84:	10 92 06 02 	sts	0x0206, r1	; 0x800206 <Serial+0x17>
+ b88:	10 92 08 02 	sts	0x0208, r1	; 0x800208 <Serial+0x19>
+ b8c:	10 92 09 02 	sts	0x0209, r1	; 0x800209 <Serial+0x1a>
+ b90:	10 92 0a 02 	sts	0x020A, r1	; 0x80020a <Serial+0x1b>
+ b94:	10 92 0b 02 	sts	0x020B, r1	; 0x80020b <Serial+0x1c>
+ b98:	c6 e9       	ldi	r28, 0x96	; 150
+ b9a:	d2 e0       	ldi	r29, 0x02	; 2
+ b9c:	80 e5       	ldi	r24, 0x50	; 80
+ b9e:	88 83       	st	Y, r24
+ ba0:	19 82       	std	Y+1, r1	; 0x01
+ ba2:	1a 82       	std	Y+2, r1	; 0x02
+ ba4:	8f ef       	ldi	r24, 0xFF	; 255
+ ba6:	8e 83       	std	Y+6, r24	; 0x06
+ ba8:	8f 83       	std	Y+7, r24	; 0x07
+ baa:	88 87       	std	Y+8, r24	; 0x08
+ bac:	89 87       	std	Y+9, r24	; 0x09
+ bae:	1e 86       	std	Y+14, r1	; 0x0e
+ bb0:	1f 86       	std	Y+15, r1	; 0x0f
+ bb2:	18 8a       	std	Y+16, r1	; 0x10
+ bb4:	19 8a       	std	Y+17, r1	; 0x11
+ bb6:	82 e5       	ldi	r24, 0x52	; 82
+ bb8:	8c 8f       	std	Y+28, r24	; 0x1c
+ bba:	87 e5       	ldi	r24, 0x57	; 87
+ bbc:	8d 8f       	std	Y+29, r24	; 0x1d
+ bbe:	1e 8e       	std	Y+30, r1	; 0x1e
+ bc0:	1f 8e       	std	Y+31, r1	; 0x1f
+ bc2:	18 a2       	std	Y+32, r1	; 0x20
+ bc4:	19 a2       	std	Y+33, r1	; 0x21
+ bc6:	10 92 f0 02 	sts	0x02F0, r1	; 0x8002f0 <flash+0x5a>
+ bca:	10 92 f1 02 	sts	0x02F1, r1	; 0x8002f1 <flash+0x5b>
+ bce:	10 92 f2 02 	sts	0x02F2, r1	; 0x8002f2 <flash+0x5c>
+ bd2:	10 92 f3 02 	sts	0x02F3, r1	; 0x8002f3 <flash+0x5d>
+ bd6:	10 92 f4 02 	sts	0x02F4, r1	; 0x8002f4 <flash+0x5e>
+ bda:	10 92 f5 02 	sts	0x02F5, r1	; 0x8002f5 <flash+0x5f>
+ bde:	10 92 f6 02 	sts	0x02F6, r1	; 0x8002f6 <flash+0x60>
+ be2:	10 92 f7 02 	sts	0x02F7, r1	; 0x8002f7 <flash+0x61>
+ be6:	82 e1       	ldi	r24, 0x12	; 18
+ be8:	e0 e6       	ldi	r30, 0x60	; 96
+ bea:	f0 e0       	ldi	r31, 0x00	; 0
+ bec:	a4 e1       	ldi	r26, 0x14	; 20
+ bee:	b3 e0       	ldi	r27, 0x03	; 3
+
+00000bf0 <.L0^B2>:
+.L0^B2():
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:72
+ bf0:	01 90       	ld	r0, Z+
+ bf2:	0d 92       	st	X+, r0
+ bf4:	8a 95       	dec	r24
+ bf6:	e1 f7       	brne	.-8      	; 0xbf0 <.L0^B2>
+ bf8:	88 e4       	ldi	r24, 0x48	; 72
+ bfa:	e2 e7       	ldi	r30, 0x72	; 114
+ bfc:	f0 e0       	ldi	r31, 0x00	; 0
+ bfe:	a6 e2       	ldi	r26, 0x26	; 38
+ c00:	b3 e0       	ldi	r27, 0x03	; 3
+
+00000c02 <.L0^B3>:
+.L0^B3():
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:72
+ c02:	01 90       	ld	r0, Z+
+ c04:	0d 92       	st	X+, r0
+ c06:	8a 95       	dec	r24
+ c08:	e1 f7       	brne	.-8      	; 0xc02 <.L0^B3>
+ c0a:	89 e0       	ldi	r24, 0x09	; 9
+ c0c:	ea eb       	ldi	r30, 0xBA	; 186
+ c0e:	f0 e0       	ldi	r31, 0x00	; 0
+ c10:	ae e6       	ldi	r26, 0x6E	; 110
+ c12:	b3 e0       	ldi	r27, 0x03	; 3
+
+00000c14 <.L0^B4>:
+.L0^B4():
+/home/user/Arduino/libraries/SPIMemory/src/SPIFlashIO.cpp:72
+ c14:	01 90       	ld	r0, Z+
+ c16:	0d 92       	st	X+, r0
+ c18:	8a 95       	dec	r24
+ c1a:	e1 f7       	brne	.-8      	; 0xc14 <.L0^B4>
+ c1c:	80 91 c3 00 	lds	r24, 0x00C3	; 0x8000c3 <.LC6>
+ c20:	90 91 c4 00 	lds	r25, 0x00C4	; 0x8000c4 <.LC6+0x1>
+ c24:	a0 91 c5 00 	lds	r26, 0x00C5	; 0x8000c5 <.LC6+0x2>
+ c28:	80 93 77 03 	sts	0x0377, r24	; 0x800377 <flash+0xe1>
+ c2c:	90 93 78 03 	sts	0x0378, r25	; 0x800378 <flash+0xe2>
+ c30:	a0 93 79 03 	sts	0x0379, r26	; 0x800379 <flash+0xe3>
+ c34:	8a e0       	ldi	r24, 0x0A	; 10
+ c36:	8a 87       	std	Y+10, r24	; 0x0a
+ c38:	8d 83       	std	Y+5, r24	; 0x05
+ c3a:	e2 e7       	ldi	r30, 0x72	; 114
+ c3c:	f0 e0       	ldi	r31, 0x00	; 0
+ c3e:	e4 91       	lpm	r30, Z
+ c40:	ea 8b       	std	Y+18, r30	; 0x12
+ c42:	7c da       	rcall	.-2824   	; 0x13c <pinMode.constprop.0>
+ c44:	61 e0       	ldi	r22, 0x01	; 1
+ c46:	8d 81       	ldd	r24, Y+5	; 0x05
+ c48:	df 91       	pop	r29
+ c4a:	cf 91       	pop	r28
+ c4c:	96 ca       	rjmp	.-2772   	; 0x17a <digitalWrite>
+
+00000c4e <__tablejump2__>:
+L0^A():
+ c4e:	ee 0f       	add	r30, r30
+
+00000c50 <.Loc.1>:
+.Loc.1():
+ c50:	ff 1f       	adc	r31, r31
+
+00000c52 <.Loc.2>:
+.Loc.2():
+ c52:	05 90       	lpm	r0, Z+
+
+00000c54 <.Loc.3>:
+.Loc.3():
+ c54:	f4 91       	lpm	r31, Z
+
+00000c56 <.Loc.4>:
+.Loc.4():
+ c56:	e0 2d       	mov	r30, r0
+
+00000c58 <.Loc.5>:
+.Loc.5():
+ c58:	09 94       	ijmp
+
+00000c5a <_exit>:
+L0^A():
+ c5a:	f8 94       	cli
+
+00000c5c <__stop_program>:
+__stop_program():
+ c5c:	ff cf       	rjmp	.-2      	; 0xc5c <__stop_program>
